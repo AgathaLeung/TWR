@@ -1,0 +1,140 @@
+focus_tree = {
+	id = moskau_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = MOS
+		}
+	}
+		
+
+
+focus = {
+		id = MOS_Unified_Russia
+		icon = GFX_focus_generic_support_the_left_right
+		x = 6
+		y = 0
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+	focus = {
+		id = MOS_Stay_With_Germany
+		icon = GFX_goal_anschluss
+                prerequisite = { focus = MOS_Unified_Russia }
+		x = 2
+		y = 1
+                mutually_exclusive = { focus = MOS_leave_the_empire_secretly } 
+                mutually_exclusive = { focus = MOS_go_the_hard_way } 
+                mutually_exclusive = { focus = MOS_slavic_revolt }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+				add_political_power = 100
+				
+		}
+	}
+focus = {
+		id = MOS_russian_freedom 
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+                prerequisite = { focus = MOS_Unified_Russia }
+		x = 6
+                y = 1
+                mutually_exclusive = { focus = MOS_leave_the_empire_secretly } 
+                mutually_exclusive = { focus = MOS_slavic_revolt }
+                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+		completion_reward = {
+				add_political_power = 200
+				add_national_unity = 0.1
+		}
+	}
+
+
+
+
+focus = {
+		id = MOS_Freedom_Under_A_Strong_Leader
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+                prerequisite = { focus = MOS_Unified_Russia }
+		x = 9
+		y = 1
+                mutually_exclusive = { focus = MOS_go_the_hard_way } 
+                mutually_exclusive = { focus = MOS_slavic_revolt }
+                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+				add_political_power = 50
+				army_experience = 10
+		}
+	}
+
+focus = {
+		id = MOS_slavic_revolt
+		icon = GFX_goal_generic_national_unity
+                prerequisite = { focus = MOS_Unified_Russia }
+		x = 12
+		y = 1
+ 		mutually_exclusive = { focus = MOS_leave_the_empire_secretly } 
+                mutually_exclusive = { focus = MOS_go_the_hard_way } 
+                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+		cost = 8
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+				}
+		completion_reward = {
+			add_political_power = -100
+			set_politics = { ruling_party = neutrality elections_allowed = no }
+			add_popularity = { ideology = neutrality popularity = 0.5 }
+		}
+	}
+
+focus = {
+		id = MOS_Destroy_Enimes  
+		icon = GFX_focus_generic_support_the_left_right
+                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+		x = 2
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+                        add_national_unity = -0.05
+		}
+	}
+	
+
+focus = {
+		id = MOS_Remove_Enimes  
+		icon = GFX_focus_generic_support_the_left_right
+                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+		x = 2
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+                        add_national_unity = -0.05
+		}
+	}
