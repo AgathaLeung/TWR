@@ -1,0 +1,692 @@
+focus_tree = {
+	id = german_himmler_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			NOT = { tag = GER }
+			original_tag = GER
+			has_government = nazis
+		}
+	}
+	focus = {
+		id = NGR_deal_with_the_untermensch
+		icon = GFX_goal_nazi_swastika
+		x = 8
+		y = 0
+		cost = 5
+		ai_will_do = {
+		    factor = 3
+		}
+		completion_reward = {
+			add_political_power = 80
+		}
+	}
+	focus = {
+		id = NGR_keep_them_down
+		icon = GFX_goal_generic_untermensch
+		prerequisite = { focus = NGR_deal_with_the_untermensch }
+		mutually_exclusive = { focus = NGR_belgian_system }
+		x = 5
+		y = 1
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = keep_them_down_idea
+				remove_idea = concentration_camps_idea
+			}
+		}
+	}
+	focus = {
+		id = NGR_belgian_system
+		icon = GFX_goal_belgian_system
+		prerequisite = { focus = NGR_deal_with_the_untermensch }
+		mutually_exclusive = { focus = NGR_keep_them_down }
+		x = 11
+		y = 1
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = belgian_system_idea
+				remove_idea = concentration_camps_idea
+			}
+		}
+	}
+	focus = {
+		id = NGR_prisoners_into_the_military
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = NGR_belgian_system focus = NGR_keep_them_down }
+		x = 8
+		y = 2
+		cost = 5
+		available = {
+			has_war = yes
+		}
+		ai_will_do = {
+		    factor = 2
+			modifier = {
+				factor = 2
+				has_manpower < 1000000
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = nazi_recruitment_system }
+				swap_ideas = { remove_idea = nazi_recruitment_system add_idea = nazi_recruitment_system_loosened }
+			}
+			if = {
+				limit = { has_idea = nazi_recruitment_system_quickened }
+				remove_ideas = nazi_recruitment_system_quickened
+			}
+		}
+	}
+	focus = {
+		id = NGR_pad_our_ranks
+		icon = GFX_goal_nazi_troops
+		prerequisite = { focus =  NGR_prisoners_into_the_military}
+		mutually_exclusive = { focus = NGR_ureinwohner_divisions }
+		x = 7
+		y = 3
+		cost = 10
+		available = {
+			has_war = yes
+		}
+		ai_will_do = {
+		    factor = 1
+			modifier = {
+				factor = 4
+				has_manpower < 1000000
+			}
+		}
+		completion_reward = {
+			add_ideas = pad_our_ranks_idea
+		}
+	}
+	focus = {
+		id = NGR_ureinwohner_divisions
+		icon = GFX_goal_yellow_militia
+		prerequisite = { focus =  NGR_prisoners_into_the_military}
+		prerequisite = { focus =  NGR_belgian_system}
+		mutually_exclusive = { focus = NGR_pad_our_ranks }
+		x = 9
+		y = 3
+		cost = 10
+		available = {
+			has_war = yes
+		}
+		ai_will_do = {
+		    factor = 2
+			modifier = {
+				factor = 3
+				has_manpower < 1000000
+			}
+		}
+		completion_reward = {
+			add_ideas = militia_yellow
+			custom_effect_tooltip = corp_in_rzhev
+			hidden_effect = { load_oob = UREINWOHNER }
+		}
+	}
+	focus = {
+		id = NGR_forced_labour
+		icon = GFX_goal_generic_untermensch_whip
+		prerequisite = { focus = NGR_keep_them_down }
+		x = 4
+		y = 2
+		cost = 10
+		available = {
+		}
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			add_ideas = forced_labour_idea
+		}
+	}
+	focus = {
+		id = NGR_infrastructure_construction
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = NGR_forced_labour }
+		x = 4
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = forced_labour_idea
+				add_idea = forced_labour_idea2
+			}
+		}
+	}
+	focus = {
+		id = NGR_mining
+		icon = GFX_goal_generic_mining
+		prerequisite = { focus = NGR_infrastructure_construction }
+		x = 4
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = forced_labour_idea2
+				add_idea = forced_labour_idea3
+			}
+		}
+	}
+	focus = {
+		id = NGR_comission_production_lines
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = NGR_belgian_system }
+		x = 12
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 3
+			modifier = {
+				factor = 0.5
+				surrender_progress > 0.3
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NGR_comission_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = NGR_comission_production_lines }
+		x = 12
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 3
+			modifier = {
+				factor = 0.5
+				surrender_progress > 0.2
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NGR_shining_light
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = NGR_comission_civilian_industry }
+		x = 13
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NGR_repair_companies
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = NGR_comission_civilian_industry }
+		prerequisite = { focus = NGR_ureinwohner_divisions }
+		x = 10
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			add_ideas = repair_companies
+		}
+	}
+	focus = {
+		id = NGR_fire_companies
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = NGR_pad_our_ranks }
+		x = 7
+		y = 4
+		cost = 10
+		available = {
+			has_war = yes
+		}
+		ai_will_do = {
+		    factor = 3
+		}
+		completion_reward = {
+			add_ideas = fire_companies_idea
+		}
+	}
+	focus = {
+		id = NGR_streamlining_the_military
+		icon = GFX_goal_generic_small_arms
+		x = 17
+		y = 0
+		cost = 5
+		ai_will_do = {
+		    factor = 4
+		}
+		completion_reward = {
+			add_political_power = 100
+			army_experience = 35
+			navy_experience = 35
+			air_experience = 35
+		}
+	}
+	focus = {
+		id = NGR_ditch_old_chain_of_command
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 15
+		y = 1
+		cost = 5
+		available = {
+			has_idea = overgrown_officer_corps
+		}
+		bypass = {
+			NOT = { has_idea = overgrown_officer_corps }
+		}
+		ai_will_do = {
+		    factor = 2
+		}
+		completion_reward = {
+			remove_ideas = overgrown_officer_corps
+			add_political_power = -50
+		}
+	}
+	focus = {
+		id = NGR_new_recruitment_program
+		icon = GFX_goal_rhineland
+		prerequisite = { focus = NGR_ditch_old_chain_of_command }
+		x = 15
+		y = 2
+		cost = 10
+		available = {
+			OR = {
+				has_idea = nazi_recruitment_system
+				has_idea = nazi_recruitment_system_loosened
+			}
+		}
+		ai_will_do = {
+		    factor = 1
+			modifier = {
+				factor = 4
+				strength_ratio = { tag = GER ratio < 0.7 } 
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { has_idea = nazi_recruitment_system }
+				swap_ideas = { remove_idea = nazi_recruitment_system add_idea = nazi_recruitment_system_quickened }
+			}
+			if = {
+				limit = { has_idea = nazi_recruitment_system_loosened }
+				remove_ideas = nazi_recruitment_system_loosened
+			}
+		}
+	}
+	focus = {
+		id = NGR_watch_and_learn
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 17
+		y = 1
+		cost = 5
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NGR_wartime_research
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = NGR_watch_and_learn }
+		x = 17
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.33
+				uses = 3
+				category = infantry_weapons
+				category = motorized_equipment
+				category = armor
+				category = support_tech
+				category = artillery
+				category = air_equipment
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = NGR_armor_designs
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = NGR_wartime_research }
+		x = 16
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				ahead_reduction = 1
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = NGR_combined_warfare
+		icon = GFX_goal_generic_airland_battle
+		prerequisite = { focus = NGR_wartime_research }
+		x = 18
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = bonus
+				bonus = 0.5
+				uses = 2
+				ahead_reduction = 1
+				category = air_techs
+			}
+		}
+	}
+	focus = {
+		id = NGR_equipment_race
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = NGR_combined_warfare focus = NGR_armor_designs }
+		x = 17
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+				category = motorized_equipment
+				category = armor
+				category = support_tech
+				category = artillery
+				category = air_equipment
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = NGR_refurbish_petersberg_shipyards
+		icon = GFX_goal_generic_build_navy
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 19
+		y = 1
+		cost = 10
+		available = {
+			has_full_control_of_state = 195
+			has_full_control_of_state = 208
+		}
+		ai_will_do = {
+		    factor = 1
+			modifier = {
+				factor = 0.25
+				has_civil_war = yes
+			}
+		}
+		completion_reward = {
+			195 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+			208 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = NGR_naval_doctrines_and_tactics
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = NGR_refurbish_petersberg_shipyards }
+		x = 19
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 1
+			modifier = {
+				factor = 0.25
+				has_civil_war = yes
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = NGR_defense_of_the_west
+		icon = GFX_goal_generic_defence_western
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 21
+		y = 1
+		cost = 4
+		available = {
+			controls_state = 58
+			has_civil_war = yes
+		}
+		ai_will_do = {
+		    factor = 4
+		}
+		completion_reward = {
+			custom_effect_tooltip = 10_divisions_in_holstein
+			hidden_effect = { add_manpower = 50000 load_oob = NGR_WESTERN_MILITIA }
+		}
+	}
+	focus = {
+		id = NGR_defense_of_the_east
+		icon = GFX_goal_generic_defence_eastern
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 23
+		y = 1
+		cost = 4
+		available = {
+			controls_state = 219
+			has_civil_war = yes
+		}
+		ai_will_do = {
+		    factor = 3
+		}
+		completion_reward = {
+			custom_effect_tooltip = 10_divisions_in_moscow
+			hidden_effect = { add_manpower = 50000 load_oob = NGR_EASTERN_MILITIA }
+		}
+	}
+	focus = {
+		id = NGR_mobilize_hitlerjugend
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = NGR_streamlining_the_military }
+		x = 22
+		y = 2
+		cost = 5
+		available = {
+			has_civil_war = yes
+		}
+		ai_will_do = {
+		    factor = 2
+			modifier = {
+				factor = 2
+				has_manpower < 500000
+			}
+		}
+		completion_reward = {
+			add_ideas = NGR_hitlerjugend_arms
+		}
+	}
+	focus = {
+		id = NGR_kampf_fur_berlin
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = NGR_mobilize_hitlerjugend }
+		x = 22
+		y = 3
+		cost = 10
+		available = {
+			has_civil_war = yes
+		}
+		ai_will_do = {
+		    factor = 1
+			modifier = {
+				factor = 2
+				strength_ratio = { tag = GER ratio < 0.75 }
+			}
+			modifier = {
+				factor = 3
+				GER = {
+					surrender_progress > 0.1
+				}
+			}
+		}
+		completion_reward = {
+			add_manpower = 50000
+			country_event = germany.102
+			GER = { country_event = germany.103 }
+		}
+	}
+}

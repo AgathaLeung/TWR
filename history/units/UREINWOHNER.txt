@@ -1,0 +1,37 @@
+﻿units = {
+	division = {
+		name = "172. Ureinwohner-Division"
+		location = 11349
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "173. Ureinwohner-Division"
+		location = 11349
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "174. Ureinwohner-Division"
+		location = 11349
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "175. Ureinwohner-Division"
+		location = 11349
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+	division = {
+		name = "176. Ureinwohner-Division"
+		location = 11349
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.75
+	}
+}

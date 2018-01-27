@@ -1,0 +1,108 @@
+﻿division_template = {
+	name = "Miliz-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+	}
+	priority = 0
+	
+}
+division_template = {
+	name = "Miliz-Division mit Artillerie"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+   		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+	priority = 0
+	
+}
+
+units = {
+	division = {
+		name = "1. Miliz-Division"
+		location = 6325
+		division_template = "Miliz-Division mit Artillerie"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "2. Miliz-Division"
+		location = 9264
+		division_template = "Miliz-Division mit Artillerie"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "3. Miliz-Division"
+		location = 11359
+		division_template = "Miliz-Division mit Artillerie"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "4. Miliz-Division"
+		location = 11545
+		division_template = "Miliz-Division mit Artillerie"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "5. Miliz-Division"
+		location = 6325
+		division_template = "Miliz-Division mit Artillerie"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "6. Miliz-Division"
+		location = 9264
+		division_template = "Miliz-Division"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "7. Miliz-Division"
+		location = 11359
+		division_template = "Miliz-Division"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "8. Miliz-Division"
+		location = 11545
+		division_template = "Miliz-Division"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "9. Miliz-Division"
+		location = 514
+		division_template = "Miliz-Division"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "10. Miliz-Division"
+		location = 11432
+		division_template = "Miliz-Division"
+		start_experience_factor = 0.02
+		start_equipment_factor = 0.5
+	}
+}

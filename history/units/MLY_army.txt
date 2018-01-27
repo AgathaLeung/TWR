@@ -1,0 +1,69 @@
+division_template = {
+	name = "Infantry Division"		
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+
+units = {
+	######## LAND OOB ########
+	##### Malayan Communist Army #####
+	division = {
+		name = "1st Division"
+		location = 4310
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "2nd Division"
+		location = 10227
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "3rd Division"
+		location = 12199
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "4th Division"
+		location = 12255
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "5th Division"
+		location = 10297
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "6th Division"
+		location = 12199
+		division_template = "Infantry Division"		
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=308
+	name="STATE_308"
+	manpower=	25678
+	state_category = small_island
+
+	history={
+		owner = CAR
+		add_core_of = CAR
+		buildings = {
+			infrastructure = 5
+			4450 = {
+				naval_base = 2
+			}
+			7123 = {
+				naval_base = 2
+			}
+		}
+	}
+
+	provinces={
+		4450 7123 
+	}
+}

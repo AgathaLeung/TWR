@@ -1,0 +1,27 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Faroe Islands
+
+news_event = {
+	id = news.500
+	title = news.500.t
+	desc = news.500.d
+	#picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.500.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+			}
+		}
+	}
+}

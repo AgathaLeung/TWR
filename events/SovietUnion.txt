@@ -1,0 +1,85 @@
+###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+# Khrushchev Arrives
+country_event = {
+	id = soviet.101
+	title = soviet.101.t
+	desc = soviet.101.d
+	picture = GFX_report_event_soviet_army_greeted
+	
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_country_leader = { ruling_only = yes name = "Lavrentiy Beria" }
+		date > 1952.2.1
+	}
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	option = {
+		name = soviet.101.a
+	}
+}
+
+country_event = {
+	id = soviet.102
+	title = soviet.102.t
+	desc = soviet.102.d
+	picture = GFX_report_event_soviet_purge_politicians
+	
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_country_leader = { ruling_only = yes name = "Lavrentiy Beria" }
+		date > 1952.5.1
+	}
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	option = {
+		name = soviet.102.a
+		add_political_power = 50
+	}
+
+	option = {
+		name = soviet.102.b
+		set_country_flag = khrushchev_back
+	}
+}
+
+country_event = {
+	id = soviet.103
+	title = soviet.103.t
+	desc = soviet.103.d
+	picture = GFX_report_event_stalin_propaganda
+	
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+		has_country_leader = { ruling_only = yes name = "Lavrentiy Beria" }
+		has_country_flag = khrushchev_back
+		date > 1952.8.1
+	}
+	mean_time_to_happen = {
+	    months = 1
+	}
+	
+	option = {
+		name = soviet.103.a
+		create_country_leader = {
+	        	name = "Nikita Khrushchev"
+	        	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	        	picture = "Portrait_soviet_khrushchev.dds"
+				expire = "1980.1.1"
+	        	ideology = leninism
+				traits = {
+				}
+			}
+	}
+}

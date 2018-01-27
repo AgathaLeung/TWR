@@ -1,0 +1,79 @@
+﻿units = {
+	division = {	#64
+		name = "500. Infanterie-Division"
+		location = 3522
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "501. Infanterie-Division"
+		location = 6521
+		division_template = "Sicherungs-Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "502. Infanterie-Division"
+		location = 6487
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "503. Infanterie-Division"
+		location = 9560
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "504. Infanterie-Division"
+		location = 3499
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "505. Infanterie-Division"
+		location = 9428
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "506. Infanterie-Division"
+		location = 11505
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "507. Infanterie-Division"
+		location = 11444
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "508. Infanterie-Division"
+		location = 11359
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "509. Infanterie-Division"
+		location = 11219
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "510. Infanterie-Division"
+		location = 3367
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.7
+	}
+}
