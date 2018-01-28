@@ -5,6 +5,8 @@ add_ideas = {
 	vets_and_refugees
 }
 set_research_slots = 3
+set_convoys = 130
+set_national_unity = 0.75
 
 # Starting tech
 set_technology = {
