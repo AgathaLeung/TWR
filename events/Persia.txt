@@ -1,27 +1,31 @@
 ﻿###########################
-# Iran Events
+# Perisa Events
 ###########################
 
 add_namespace = persia
 
 country_event = {
-	id = iran.100
-	title = iran.100.t
-	desc = iran.100.d
+	id = persia.101
+	title = persia.101.t
+	desc = persia.101.d
 	#picture = GFX_report_event_europe_funeral
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		tag = PER
+		has_global_flag = uk_demand_khuzestan
+		ENG = { exists = yes }
+		}
 
 	option = {
-		name = iran.100.a
+		name = persia.101.a
 		ENG = { set_state_owner = 413 }
 		add_national_unity = -0.05
 	}
 
 	option = {
-		name = iran.100.b
+		name = persia.101.b
 		add_national_unity = 0.05
 		declare_war_on = { target = ENG type = annex_everything }
 	}
