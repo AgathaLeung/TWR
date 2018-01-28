@@ -2,7 +2,7 @@
 state={
 	id=400
 	name="STATE_400"
-	manpower = 2115475
+	manpower = 2615475
 	resources={
 		aluminium=20
 	}
@@ -12,7 +12,8 @@ state={
 	history={
 		owner = RUS
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
+			industrial_complex = 1
 		}
 		add_core_of = SOV
 		add_core_of = RUS

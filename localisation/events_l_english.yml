@@ -2453,6 +2453,9 @@
  soviet.103.t:0 "Khrushchev seizes power"
  soviet.103.d:0 "A second power struggle in the Soviet Union ended with Khruschev victorious. Through increasingly impassioned and unsubtle criticisms of Beria, he has brought the aparatus of power into his control. With Beria removed from power, it seems the future path of the remnants of the once mighty USSR has shifted."
  soviet.103.a:0 "A new chapter for the Soviet people"
+ 
+ vets_and_refugees:0 "Vets and Refugees"
+ vets_and_refugees_desc:0 "The great retreat from Moscow and the occupation of our homelands has left a large portion of the former red army officers and veterans exiled in our lands. This, combined with the countless refugees escaping death over the de-facto border, has bolstered our population and created a diaspora that we should integrate into our workforce, in order to guarantee their right to someday return home."
 
  britain.100.t:0 "George VI dies"
  britain.100.d:0 "King George VI, Head of State of the United Kingdom and of the Commonwealth, took the nation through the war intact, but now he dies with the Empire collapsing and Europe entirely under the Nazi yoke. It will take fresh and strong leadership, both in the monarchy and in the government, to bring the UK through the second half of the 20th century."

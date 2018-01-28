@@ -2,9 +2,9 @@
 state={
 	id=262
 	name="STATE_262" # Pechora
-	manpower = 43590
+	manpower = 145590
 	
-	state_category = rural
+	state_category = pastoral
 	
 	resources={
 		oil=8
@@ -13,8 +13,11 @@ state={
 	history={
 		owner = RUS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			12530 = {
+				naval_base = 1
+			}
+			9205 = {
 				naval_base = 1
 			}
 

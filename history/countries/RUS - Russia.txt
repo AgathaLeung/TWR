@@ -1,7 +1,9 @@
 capital = 206
 
-oob = "BLR_1936"
-
+oob = "RUS_1952"
+add_ideas = {
+	vets_and_refugees
+}
 set_research_slots = 3
 
 # Starting tech
@@ -18,8 +20,8 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
+	basic_heavy_tank = 1  # PLACEHOLDER
+	basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -41,34 +43,56 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 20
+			popularity = 29
+		}
+		
+		neutrality = { 
+			popularity = 25
+		}
+		
+		social_democrat = { 
+			popularity = 18
 		}
 
-		neutrality = {
-			popularity = 60
+		fascism = {
+			popularity = 1
+		}
+
+		nazis = {
+			popularity = 0
+		}
+
+		liberal = {
+			popularity = 12
 		}
 		
 		communism = {
 			popularity = 15
 		}
-
-		fascism = { 
-			popularity = 5
-		}
 	}
 	
 	ruling_party = neutrality
-	last_election = "1935.11.14"
+	last_election = "1951.1.14"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 
-#create_country_leader = {
-    name = "Vasil Zacharka"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+create_country_leader = {
+    name = "Sergei Wojciechowski"
+    desc = "SERGEI_DESC"
+    picture = "gfx/leaders/RUS/Sergei_Wojciechowski.dds"
     expire = "1965.1.1"
     ideology = centrism
+    traits = {
+        #
+    }
+}
+create_country_leader = {
+    name = "Sergei Wojciechowski"
+    desc = "SERGEI_DESC"
+    picture = "gfx/leaders/RUS/Sergei_Wojciechowski.dds"
+    expire = "1965.1.1"
+    ideology = conservatism
     traits = {
         #
     }

@@ -2,14 +2,14 @@
 state={
 	id=579
 	name="STATE_579" # Salekhard
-	manpower = 45484
+	manpower = 49484
 	
-	state_category = wasteland
+	state_category = pastoral
 
 	history={
 		owner = RUS
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		add_core_of = SOV
 		add_core_of = RUS
