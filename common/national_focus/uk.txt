@@ -1028,7 +1028,7 @@ focus_tree = {
 		mutually_exclusive = { focus = UK_iran_diplomacy }
 
 		completion_reward = {
-			country_event = { id = iran.100 days = 1 }
+			set_global_flag = uk_demand_khuzestan
 		}
 	}
 
