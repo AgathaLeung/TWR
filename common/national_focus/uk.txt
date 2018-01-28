@@ -1050,6 +1050,6 @@ focus_tree = {
 		mutually_exclusive = { focus = UK_demand_khuzestan }
 
 		completion_reward = {
-			country_event = { id = iran.100 days = 1 }
+			PER = { country_event = { id = iran.100 days = 1 } }
 		}
 	}
