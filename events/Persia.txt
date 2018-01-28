@@ -16,6 +16,7 @@ country_event = {
 		tag = PER
 		has_global_flag = uk_demand_khuzestan
 		ENG = { exists = yes }
+		}
 
 	option = {
 		name = persia.101.a

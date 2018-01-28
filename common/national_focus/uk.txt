@@ -1028,7 +1028,7 @@ focus_tree = {
 		mutually_exclusive = { focus = UK_iran_diplomacy }
 
 		completion_reward = {
-			set_global_flag = uk_demand_khuzestan
+			PER = { country_event = { id = persia.101 days = 1 } }
 		}
 	}
 
@@ -1050,6 +1050,5 @@ focus_tree = {
 		mutually_exclusive = { focus = UK_demand_khuzestan }
 
 		completion_reward = {
-			PER = { country_event = { id = persia.101 days = 1 } }
 		}
 	}
