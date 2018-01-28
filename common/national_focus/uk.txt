@@ -989,3 +989,66 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = UK_iranian_oil
+		icon = GFX_goal_generic_oil_refinery
+		x = 35
+		y = 2
+		cost = 10
+		available = {
+		}
+		prerequisite = { focus = UK_middle_east }
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = no
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = UK_demand_khuzestan
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 34
+		y = 3
+		cost = 10
+		available = {
+		}
+		prerequisite = { focus = UK_iranian_oil }
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = no
+		mutually_exclusive = { focus = UK_iran_diplomacy }
+
+		completion_reward = {
+			PER = { country_event = { id = persia.101 days = 1 } }
+		}
+	}
+
+	focus = {
+		id = UK_iran_diplomacy
+		icon = GFX_goal_generic_improve_relations
+		x = 36
+		y = 3
+		cost = 10
+		available = {
+		}
+		prerequisite = { focus = UK_iranian_oil }
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available_if_capitulated = no
+		mutually_exclusive = { focus = UK_demand_khuzestan }
+
+		completion_reward = {
+		}
+	}

@@ -2486,6 +2486,11 @@
  britain.107.b:0 "Create a Dominion of Indochina"
  britain.107.c:0 "Negotiate with the Vietnamese Communists"
 
+ persia.101.t:0 "Britain Demands Khuzestan"
+ persia.101.d:0 "Today, the British sent a demand to Tehran, requesting the immediate occupation of the territory of Khuzestan by British forces 'for the security of the region'. It is clear the British want only to control our oil, but their armies are greater than ours. Can we really resist?"
+ persia.101.a:0 "Concede"
+ persia.101.b:0 "Never!"
+
  #########
 
  news.500.t:0 "Britain Seizes the Faroe Islands"
