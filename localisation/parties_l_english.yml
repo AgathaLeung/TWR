@@ -524,4 +524,10 @@
  RKU_fascism_party:0 "NSDAP"
  GOT_fascism_party:0 "NSDAP"
 
+ RUS_liberal_party:0 "Kadets"
+ RUS_neutrality_party:0 "Military Junta"
+ RUS_fascism_party:0 "Russian Fascist Party"
+ RUS_social_democrat_party:0 "Menshiviks"
+ RUS_democratic_party:0 "Democratic Conservative Party"
+
  MOR_neutrality_party:0 "Alaouite Dynasty"
