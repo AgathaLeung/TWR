@@ -2,12 +2,13 @@
 state={
 	id=640
 	name="STATE_640" # Mandalay
-	manpower = 3944600
+	manpower = 4406118
 	
 	state_category = town
 
 	history={
 		owner = BUR
+		add_core = BUR
 		buildings = {
 			infrastructure = 3
 			air_base = 1

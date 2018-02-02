@@ -1,6 +1,6 @@
-capital = 288
+capital = 432
 
-oob = "BUR_1936"
+oob = "ASS_1952"
 
 set_research_slots = 2
 
@@ -44,32 +44,25 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 35
+			popularity = 56
 		}
 		
 		communism = {
-			popularity = 15
+			popularity = 7
 		}
 		liberal = {
-			popularity = 40
+			popularity = 15
+		}
+		social_democrat = {
+			popularity = 19
 		}
 		fascism = {
-			popularity = 10
+			popularity = 3
 		}
 	}
 
-	ruling_party = liberal
+	ruling_party = democratic
 	last_election = "1951.2.22"
 	election_frequency = 72
-	elections_allowed = yes
-}
-create_country_leader = {
-	name = "Sao Shwe Thaik"
-	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/East_India/Sao_Shwe_Thaik.dds"
-	expire = "1965.1.1"
-	ideology = liberal
-	traits = {
-		#
-	}
+	elections_allowed = no
 }

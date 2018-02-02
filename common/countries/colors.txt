@@ -299,8 +299,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
+	color = rgb { 10  170  10 }
+	color_ui = rgb { 10  200  10 }
 }
 
 CRO = {
@@ -604,8 +604,8 @@ CAR = {
 }
 
 BEN = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 87 126 236 }
+	color_ui = rgb { 87 126 255 }
 }
 
 INO = {
@@ -616,4 +616,14 @@ INO = {
 NGR = {
 	color = rgb { 255  51  51 }
 	color_ui = rgb { 213  169  121 }
+}
+
+SKM = {
+	color = rgb { 247  240  171 }
+	color_ui = rgb { 247  240  171 }
+}
+
+ASS = {
+	color = rgb { 171  5  5 }
+	color_ui = rgb { 171  50  50 }
 }

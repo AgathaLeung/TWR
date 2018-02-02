@@ -2,12 +2,12 @@
 state={
 	id=288
 	name="STATE_288"
-	manpower = 10722500
+	manpower = 11977032
 	
-	state_category = town
+	state_category = city
 	
 	resources={
-		rubber=4
+		rubber=8
 	}
 
 	history={
@@ -15,10 +15,12 @@ state={
 		victory_points = {
 			1330 5 
 		}
+		add_core = BUR
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-			air_base = 1
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
 			1330 = {
 				naval_base = 4
 			}

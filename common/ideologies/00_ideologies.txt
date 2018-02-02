@@ -7,11 +7,6 @@ ideologies = {
 			conservatism = {
 			}
 		
-			liberalism = {
-			}
-		
-			socialism = {
-			}
 		}
 		
 		dynamic_faction_names = {
@@ -23,7 +18,7 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 0 0 255 }
+		color = { 65 70 175 }
 		
 		rules = {
 			can_declare_war_on_same_ideology = no
@@ -35,8 +30,8 @@ ideologies = {
 			can_guarantee_other_ideologies = yes
 		}
 		
-		war_impact_on_world_tension = -1.0
-		faction_impact_on_world_tension = -0.1
+		war_impact_on_world_tension = 0.2
+		faction_impact_on_world_tension = -0.2
 		
 		modifiers = {
 			generate_wargoal_tension = 1.00
@@ -83,7 +78,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 		
-		color = { 255 0 0 }
+		color = { 127 0 0 }
 		
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -128,9 +123,9 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 		
-		color = { 150 75 0 }
+		color = { 147 115 54 }
 		
-		war_impact_on_world_tension = 1.0			#evil!
+		war_impact_on_world_tension = 0.9			#evil!
 		faction_impact_on_world_tension = 1.0
 		
 		rules = {
@@ -171,10 +166,10 @@ ideologies = {
 			"FACTION_NAME_NONALIGNED_5"
 		}
 		
-		color = { 124 124 124 }
+		color = { 126 54 147 }
 		
 		
-		war_impact_on_world_tension = 0.5		#no major danger
+		war_impact_on_world_tension = 0.6
 		faction_impact_on_world_tension = 0.1
 		
 		rules = {
@@ -206,6 +201,8 @@ ideologies = {
 		types = {
 			socdem = {}
 			}
+			socialism = {
+			}
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
 			"FACTION_NAME_DEMOCRATIC_2"
@@ -215,7 +212,9 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
 		
-		color = { 255 80 80 }
+		color = { 255 94 94 }
+		war_impact_on_world_tension = 0.3
+		faction_impact_on_world_tension = -0.3
 		
 		rules = {
 			can_force_government = yes
@@ -236,6 +235,8 @@ ideologies = {
 		types = {
 				liberal = {
 				}
+				liberalism = {
+				}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_DEMOCRATIC_1"
@@ -245,7 +246,9 @@ ideologies = {
 			"FACTION_NAME_DEMOCRATIC_5"
 			"FACTION_NAME_DEMOCRATIC_6"
 		}
-		color = { 255 216 0 }
+		color = { 249 255 94 }
+		war_impact_on_world_tension = 0.1
+		faction_impact_on_world_tension = -0.1
 		rules = {
 			can_force_government = yes
 			can_puppet = yes
@@ -272,7 +275,9 @@ ideologies = {
 			"FACTION_NAME_FASCIST_4"
 			"FACTION_NAME_FASCIST_5"
 		}
-		color = { 0 0 0 }
+		color = { 72 70 68 }
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 1.0
 		rules = {
 			can_force_government = no
 			can_puppet = yes
