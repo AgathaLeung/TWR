@@ -1673,6 +1673,15 @@
  NGR_neutrality_ADJ:0 "Nigerian"
  NGR_communism_ADJ:0 "Nigerian"
 
+ MOR_neutrality:0 "Kingdom of Morocco"
+ MOR_neutrality_DEF:0 "The Kingdom of Morocco"
+ MOR_democratic:0 "Morocco"
+ MOR_democratic_DEF:0 "Morocco"
+ MOR_liberal:0 "Morocco"
+ MOR_liberal_DEF:0 "Morocco"
+ MOR_social_democrat:0 "Morocco"
+ MOR_social_democrat_DEF:0 "Morocco"
+
  FACTION_NAME_DEMOCRATIC_1:0 "The $CONTINENT_ADJ$ Association"
  FACTION_NAME_DEMOCRATIC_2:0 "The $CONTINENT_ADJ$ Entente"
  FACTION_NAME_DEMOCRATIC_3:0 "The $LEADER_COUNTRY_ADJ$ Concordat"

@@ -45,7 +45,7 @@ set_politics = {
 
 	parties = {
 		democratic = { 
-			popularity = 29
+			popularity = 18
 		}
 		
 		neutrality = { 
@@ -53,11 +53,11 @@ set_politics = {
 		}
 		
 		social_democrat = { 
-			popularity = 18
+			popularity = 12
 		}
 
 		fascism = {
-			popularity = 1
+			popularity = 16
 		}
 
 		nazis = {
@@ -65,11 +65,7 @@ set_politics = {
 		}
 
 		liberal = {
-			popularity = 12
-		}
-		
-		communism = {
-			popularity = 15
+			popularity = 29
 		}
 	}
 	
@@ -100,38 +96,13 @@ create_country_leader = {
     }
 }
 
-#create_country_leader = {
-    name = "Radasłaŭ Astroŭski"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-    expire = "1965.1.1"
-    ideology = fascism_ideology
-    traits = {
-        #
-    }
+create_country_leader = {
+	name = "Aleksandr Kerensky"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = ""
+	expire = "1980.1.1"
+	ideology = liberal
+	traits = {
+		#		
+	}
 }
-
-#create_country_leader = {
-    name = "Panteleimon Ponomarenko"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-    expire = "1965.1.1"
-    ideology = stalinism
-    traits = {
-        #
-    }
-}
-
-#create_country_leader = {
-    name = "Adam Stankievič"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-    expire = "1965.1.1"
-    ideology = socialism
-    traits = {
-        #
-    }
-}
-
-
-

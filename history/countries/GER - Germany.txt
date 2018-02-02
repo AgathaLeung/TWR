@@ -180,7 +180,7 @@ if = {
 	}
 	set_autonomy = {
 		target = OST
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = OST
@@ -193,7 +193,7 @@ if = {
 	}
 	set_autonomy = {
 		target = DEN
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichsprotectorate
 	}
 	else = {
 		puppet = DEN
@@ -206,7 +206,7 @@ if = {
 	}
 	set_autonomy = {
 		target = NOR
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichsprotectorate
 	}
 	else = {
 		puppet = NOR
@@ -219,7 +219,7 @@ if = {
 	}
 	set_autonomy = {
 		target = RKU
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = RKU
@@ -232,7 +232,7 @@ if = {
 	}
 	set_autonomy = {
 		target = GOT
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = GOT
@@ -245,7 +245,7 @@ if = {
 	}
 	set_autonomy = {
 		target = MOS
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = MOS
@@ -258,7 +258,7 @@ if = {
 	}
 	set_autonomy = {
 		target = KAU
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = KAU

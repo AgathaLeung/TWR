@@ -627,3 +627,8 @@ ASS = {
 	color = rgb { 171  5  5 }
 	color_ui = rgb { 171  50  50 }
 }
+
+MOR = {
+	color = rgb { 255 120 71 }
+	color_ui = rgb { 255 120 71 }
+}
