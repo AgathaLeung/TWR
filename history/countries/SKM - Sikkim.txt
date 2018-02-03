@@ -63,3 +63,13 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
+create_country_leader = {
+	name = "Tashi Namgyal"
+	desc = "POLITICS_SUNGLASSES_DESC"
+	picture = "gfx/leaders/East_India/Tashi_Namgyal.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
