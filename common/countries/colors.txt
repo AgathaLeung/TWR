@@ -632,3 +632,18 @@ MOR = {
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
+
+HYD = {
+	color = rgb { 131 247 211 }
+	color_ui = rgb { 140 247 211 }
+}
+
+TAM = {
+	color = rgb { 166 247 131 }
+	color_ui = rgb { 188 235 21 }
+}
+
+MAR = {
+	color = rgb { 247 216 131 }
+	color_ui = rgb { 255 187 0 }
+}

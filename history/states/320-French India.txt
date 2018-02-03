@@ -1,0 +1,29 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 16615288
+
+	state_category = town
+
+	history={
+		owner = TAM
+		add_core_of = TAM
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			10149 = {
+				naval_base = 1
+			}
+			10278 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			10278 5
+		}
+	}
+
+	provinces={ 1268 4420 7436 8067 10149 10246 10278 10808 12164  }
+}

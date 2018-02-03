@@ -2,15 +2,20 @@
 state={
 	id=424
 	name="STATE_424" # Madras
-	manpower = 15791700
-	state_category = rural
+	manpower = 17639328
+	state_category = town
 	
 
 	history={
-		owner = RAJ
+		owner = HYD
+		add_core_of = HYD
+		add_core_of = RAJ
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			7340 1
 		}
 
 	}

@@ -2,9 +2,9 @@
 state={
 	id=425
 	name="STATE_425" # Mysore
-	manpower = 12348200
+	manpower = 13792939
 	
-	state_category = rural
+	state_category = town
 	
 	resources={
 		chromium=20
@@ -12,9 +12,11 @@ state={
 	}
 
 	history={
-		owner = RAJ
+		owner = MAR
+		add_core_of = RAJ
+		add_core_of = MAR
 		victory_points = {
-			8011 1
+			8011 3
 		}
 		buildings = {
 			infrastructure = 4
