@@ -10,9 +10,9 @@ state={
 	}
 
 	history={
-		owner = FAR
+		owner = RUS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 		}
 		add_core_of = SOV
 		add_core_of = RUS
