@@ -112,24 +112,13 @@ set_technology = {
 set_politics = {
 
 	parties = {
-		democratic = { 
-			popularity = 5
-		}
 
 		fascism = {
-			popularity = 5
-		}
-		
-		communism = {
-			popularity = 5
-		}
-		
-		neutrality = {
-			popularity = 5
+			popularity = 20
 		}
 		
 		nazis = {
-			popularity = 80
+			popularity = 50
 		}
 	}
 	
@@ -143,33 +132,28 @@ set_convoys = 80
 set_national_unity = 0.75
 
 create_country_leader = {
-	name = "Hubert Pierlot"
-	desc = "POLITICS_HUBERT_PIERLOT_DESC"
-	picture = "Portrait_Belgium_Hubert_Pierlot.dds"
+	name = "Abdulla Bayramov"
+	picture = "gfx/leaders/MOS/Abdulla_Bayramov.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = nazism
 	traits = {
 		
 	}
 }
-
 create_country_leader = {
-	name = "Joseph Jacquemotte"
-	desc = "POLITICS_JOSEPH_JACQUEMOTTE_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
+	name = "Abdulla Bayramov"
+	picture = "gfx/leaders/MOS/Abdulla_Bayramov.dds"
 	expire = "1965.1.1"
-	ideology = anarchist_communism
+	ideology = fascism_ideology
 	traits = {
 		
 	}
 }
-
 create_country_leader = {
-	name = “placeholder”
-	#desc = "POLITICS_LEON_DEGRELLE_DESC"
-	#picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	name = "Abdulla Bayramov"
+	picture = "gfx/leaders/MOS/Abdulla_Bayramov.dds"
 	expire = "1965.1.1"
-	ideology = Nazism
+	ideology = marxism
 	traits = {
 		
 	}
