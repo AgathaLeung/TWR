@@ -141,16 +141,16 @@ set_technology = {
 		election_frequency = 60
 		elections_allowed = no
 
-
 create_country_leader = {
-	name = "James Wilson Robertson"
-	desc = "POLITICS_DF_MALAN_DESC"
-	picture = ""
-	expire = "1965.1.1"
-	ideology = ideology_neutrality
+	name = "Sir John Macpherson"
+	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+	picture = "Portrait_France_PG.dds"
+	expire = "1980.1.1"
+	ideology = centrism
 	traits = {
-		
+				
 	}
 }
 
 set_cosmetic_tag = NGR_UK
+}
