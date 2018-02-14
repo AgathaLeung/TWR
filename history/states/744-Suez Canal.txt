@@ -1,0 +1,19 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		1155 4073 9947 12049 
+	}
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = ENG
+		add_core_of = EGY
+
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}
