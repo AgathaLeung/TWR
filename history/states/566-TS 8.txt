@@ -9,7 +9,7 @@ state={
 	}
 
 	history={
-		owner = SIB
+		owner = RUS
 		victory_points = {
 			4797 3 
 		}
