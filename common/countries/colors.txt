@@ -1,7 +1,7 @@
 #reload countrycolors
 
 GER = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
@@ -535,27 +535,27 @@ D15 = {
 ######
 
 OST = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 
 RKU = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 
 GOT = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 
 MOS = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 
 KAU = {
-	color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 60 60 60 }
 	color_ui = rgb { 138 155 116 }
 }
 ZEN = {
