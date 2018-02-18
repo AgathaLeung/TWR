@@ -1,4 +1,4 @@
-name="Thousand-Week Reich"
+﻿name="Thousand-Week Reich"
 path="mod/twr/"
 tags={
 	"Alternative History"
