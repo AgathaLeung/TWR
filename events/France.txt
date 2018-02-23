@@ -67,7 +67,6 @@ country_event = {
 		
 		}
 	}
-}
 
 #French Spring
 country_event = {
