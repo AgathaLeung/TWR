@@ -204,5 +204,20 @@ news_event = {
 		}
 	}
 }
+#German intervention in Ostland
+news_event = {
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_news_event_tank_factory
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.1010.a
+	}
+}
 
 
