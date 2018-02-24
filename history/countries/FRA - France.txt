@@ -146,7 +146,7 @@ set_politics = {
 		}
 
 		social_democrat = { 
-			popularity = 12
+			popularity = 10
 		}
 
 		liberal = { 
@@ -154,7 +154,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 28
+			popularity = 22
 		}
 
 		nazis = {
@@ -162,11 +162,11 @@ set_politics = {
 		}
 		
 		communism = {
-			popularity = 5
+			popularity = 18
 		}
 		
 		neutrality = {
-			popularity = 25
+			popularity = 20
 		}
 	}
 	
@@ -213,7 +213,7 @@ create_country_leader = {
 	desc = "POLITICS_MAURICE_THOREZ_DESC"
 	picture = "Portrait_France_Generic_3.dds"
 	expire = "1965.1.1"
-	ideology = 	stalinism
+	ideology = stalinism
 	traits = {
 		
 	}
