@@ -42,7 +42,7 @@ focus_tree = {
 			has_country_leader = { ruling_only = yes name = "Heinrich Himmler" }
 		}
 		available = {
-			has_country_flag = himmler_second_in_command
+			always = no
 		}
 		ai_will_do = {
 		    factor = 5
@@ -68,6 +68,7 @@ focus_tree = {
 			has_country_leader = { ruling_only = yes name = "Hermann Goering" }
 		}
 		available = {
+			always = no
 		}
 		ai_will_do = {
 		    factor = 4

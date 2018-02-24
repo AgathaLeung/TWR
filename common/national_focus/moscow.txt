@@ -31,8 +31,8 @@ focus = {
                 prerequisite = { focus = MOS_Unified_Russia }
 		x = 2
 		y = 1
-                mutually_exclusive = { focus = MOS_leave_the_empire_secretly } 
-                mutually_exclusive = { focus = MOS_go_the_hard_way } 
+                mutually_exclusive = { focus = MOS_russian_freedom } 
+                mutually_exclusive = { focus = MOS_Freedom_Under_A_Strong_Leader } 
                 mutually_exclusive = { focus = MOS_slavic_revolt }
 		cost = 10
 		ai_will_do = {
@@ -49,7 +49,7 @@ focus = {
                 prerequisite = { focus = MOS_Unified_Russia }
 		x = 6
                 y = 1
-                mutually_exclusive = { focus = MOS_leave_the_empire_secretly } 
+                mutually_exclusive = { focus = MOS_Freedom_Under_A_Strong_Leader} 
                 mutually_exclusive = { focus = MOS_slavic_revolt }
                 mutually_exclusive = { focus = MOS_Stay_With_Germany }
 		cost = 10
@@ -71,7 +71,7 @@ focus = {
                 prerequisite = { focus = MOS_Unified_Russia }
 		x = 9
 		y = 1
-                mutually_exclusive = { focus = MOS_go_the_hard_way } 
+                mutually_exclusive = { focus = MOS_Freedom_Under_A_Strong_Leader  } 
                 mutually_exclusive = { focus = MOS_slavic_revolt }
                 mutually_exclusive = { focus = MOS_Stay_With_Germany }
 		cost = 10
@@ -109,7 +109,7 @@ focus = {
 focus = {
 		id = MOS_Destroy_Enimes  
 		icon = GFX_focus_generic_support_the_left_right
-                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+                prerequisite = { focus = MOS_Stay_With_Germany }
 		x = 2
 		y = 2
 		cost = 10
@@ -124,9 +124,9 @@ focus = {
 	
 
 focus = {
-		id = MOS_Remove_Enimes  
+		id = MOS_furtheur_Remove_Enemies
 		icon = GFX_focus_generic_support_the_left_right
-                mutually_exclusive = { focus = MOS_Stay_With_Germany }
+                prerequisite = { focus = MOS_Destroy_Enimes  }
 		x = 2
 		y = 3
 		cost = 10
@@ -136,5 +136,497 @@ focus = {
 		completion_reward = {
 			add_political_power = 200
                         add_national_unity = -0.05
+		}
+	}
+
+focus = {
+		id = MOS_assult_rebels
+		icon = GFX_focus_generic_support_the_left_right 
+                prerequisite = { focus =  MOS_furtheur_Remove_Enemies }
+		x = 2
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+                        add_national_unity = 0.05
+		}
+	}
+
+focus = {
+		id = MOS_rebuild_Moscow
+		icon = GFX_focus_generic_support_the_left_right
+                prerequisite = { focus = MOS_assult_rebels  }
+		x = 2
+		y = 5
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			random_owned_controlled_state = {
+
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+					}
+				}
+  		        }
+		}
+
+
+focus = {
+		id = MOS_Time_to_finish_them_off
+		icon = GFX_focus_generic_support_the_left_right
+                prerequisite = { focus = MOS_rebuild_Moscow }
+		x = 2
+		y = 6
+		cost = 20
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+				remove_ideas = slavic_partians
+		}
+	}
+
+		
+focus = {	
+		id = MOS_a_germanic_Russia
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_Time_to_finish_them_off }
+		x = 2
+		y = 7
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 1000
+		}
+	}
+
+focus = {
+		id = MOS_get_rid_of_german_elements 
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_russian_freedom }			
+		x = 6
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+focus = {
+		id = MOS_form_democract_goverment
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_german_elements }
+		x = 6
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			set_politics = { ruling_party = democratic elections_allowed = yes }
+			add_popularity = { ideology = democratic popularity = 0.5 }
+		}
+	}
+
+focus = {
+		id = MOS_rebuild_the_empire
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_form_democract_goverment }			
+		x = 5
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_gain_contacts_to_the_outside_world
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_form_democract_goverment }			
+		x = 5
+		y = 5
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_get_rid_of_fascists
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_german_elements }			
+		x = 7
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_get_rid_of_them
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_fascists }			
+		x = 7
+		y = 5
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_the_first_election
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_them }
+		prerequisite = { focus = MOS_gain_contacts_to_the_outside_world }			
+		x = 6
+		y = 6
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 }
+		}
+	}
+focus = {
+		id = MOS_celebrate_in_the_black_square
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_them }			
+		x = 6
+		y = 7
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.5 }
+			set_politics = { ruling_party = communism elections_allowed = no }
+
+		}
+	}
+focus = {
+		id = MOS_fix_the_current_system 
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_celebrate_in_the_black_square }
+		x = 6
+		y = 8
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_expand_are_rule
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_fix_the_current_system  }
+		x = 6
+		y = 8
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+focus = {
+		id = MOS_the_Ponomarenko_Bulganin_pact
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_expand_are_rule}
+		x = 6
+		y = 9
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+focus = {
+		id = MOS_get_rid_of_capalist_elements
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_the_Ponomarenko_Bulganin_pact}
+		x = 6
+		y = 10
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_unite_with_the_Soviet_Union
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_capalist_elements}
+		x = 6
+		y = 11
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+focus = {
+		id = MOS_a_socalist_union
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_unite_with_the_Soviet_Union}
+		x = 6
+		y = 12
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_form_a_goverment
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_Freedom_Under_A_Strong_Leader}
+		x = 9
+		y = 2
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+
+focus = {
+		id = MOS_move_away_from_germany
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_form_a_goverment}
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_reform_the_system
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_move_away_from_germany}
+		x = 9
+		y = 4
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_snap_elections
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_snap_elections}
+		x = 9
+		y = 5
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_elect_gobbels
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_snap_elections}
+		x = 8
+		y = 6
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_elect_kosh
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_reform_the_system}
+		x = 9
+		y = 6
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_elect_kiesinger
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_snap_elections}
+		x = 10
+		y = 6
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_reverse_the_reforms 
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_elect_gobbels}
+		x = 8
+		y = 7
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_stay_isolationist
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_reverse_the_reforms}
+		x = 8
+		y = 8
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_create_more_trains
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_stay_isolationist}
+		x = 8
+		y = 9
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_get_rid_of_freedom
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_create_more_trains}
+		x = 8
+		y = 10
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_destroy_the_remnants_of_the_old
+
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_get_rid_of_freedom}
+		x = 8
+		y = 11
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_military_drills_near_the_german_boarder 
+
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_destroy_the_remnants_of_the_old}
+		x = 8
+		y = 12
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_steal_from_germany
+
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_destroy_the_remnants_of_the_old}
+		x = 8
+		y = 13
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
+		}
+	}
+focus = {
+		id = MOS_enimes_on_all_sides 
+
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = MOS_steal_from_germany}
+		x = 8
+		y = 14
+		cost = 10
+		ai_will_do = {
+		    factor = 100
+                }
+		completion_reward = {
+			add_political_power = 200
 		}
 	}

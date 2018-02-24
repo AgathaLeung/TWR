@@ -107,7 +107,7 @@
  agricultural_subsidies:0 "Agricultural Subsidies"
  agricultural_subsidies_desc:0 "The government is allocating funds for farmers in hopes of modernising the sector."
  agricultural_subsidies_success:0 "Agricultural Subsidies Success!"
- 
+
  #ADD THESE
  GER_purge_nazis:0 "Purge the Nazi leadership"
  GER_purge_nazis_desc:0 "The Nazi government has committed countless crimes against Germany and the world. Its leaders must be removed from power and brought to swift justice."
@@ -115,7 +115,7 @@
  GER_reconstruction_desc:0 "With the civil war over and the Nazis removed from power, it's time to start the process of reconstruction for this ruined nation."
  GER_end_RK:0 "End the Reichskommissariats"
  GER_end_RK_desc:0 "The 'Reichskommissariats' are an obimination, products of Nazi colonialism built on ideas of racial supremacy. They must be dissolved."
- 
+
  NGR_deal_with_the_untermensch:0 "Deal With The Untermensch"
  NGR_deal_with_the_untermensch_desc:0 "Our lands are mostly populated by subhumans, who do not deserve human rights. In the dire situation we are in we should choose how to utilise these people."
  NGR_keep_them_down:0 "Keep Them Down"
@@ -186,7 +186,7 @@
  NGR_mobilize_hitlerjugend_desc:0 ""
  NGR_kampf_fur_berlin:0 "Kämpfe für Berlin"
  NGR_kampf_fur_berlin_desc:0 "The Capital of Germany always was the seat of Hitler's power, and even though the initial revolt failed to capture it, the people living in the city can still show their loyalty to the real Fuhrer..."
- 
+
  WHILE_FOCUSING:0 "While focusing on this, there will be the following effects:\n$EFF$"
  generic_focus:0 "National Focus"
  army_effort:0 "Army Effort"
@@ -2161,3 +2161,19 @@
  UK_iran_diplomacy:0 "Anglo-Iranian Diplomacy"
 
 
+
+
+
+
+
+
+
+
+
+
+
+#Moscow
+MOS_Unified_Russia:0 "Unified Russia"
+
+slavic_partians:0 "Slavic Partians"
+slavic_partians_desc:0 "Ever sence the Reichskomissariat Moskau was formed and even after the formation of a united Russia rebels have been plaging the country and in more then one instance the Germanic-Russian army has been harased. Now that Kashe's imperial dreams have been put into affect he can turn his eye to the rebels inside of OstEuropa. DOWN WITH THE TRAITORS AND UP WITH THE REICHSKOMMISSARS"

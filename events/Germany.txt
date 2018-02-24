@@ -23,50 +23,103 @@ country_event = {
 	option = {
 		name = germany.1.a
 		set_country_flag = hitler_ill
+		hidden_effect = {
+			country_event = { id = germany.200 days = 15 }
+			country_event = { id = germany.201 days = 20 }
+		}
 	}
 }
-#Hitler's second in command?
+#Himmler's bid for power
 country_event = {
-	id = germany.2
-	title = germany.2.t
-	desc = germany.2.d
-	picture = GFX_report_event_german_advisors_remain
+	id = germany.200
+	title = germany.200.t
+	desc = germany.200.d
+	picture = GFX_report_event_german_polish_border
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.200.a
+		add_political_power = -10
+	}
+}
+#Göring's bid for power
+country_event = {
+	id = germany.201
+	title = germany.201.t
+	desc = germany.201.d
+	picture = GFX_report_event_german_volunteers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.201.a
+		add_political_power = -10
+	}
+}
+#Cancer develops
+country_event = {
+	id = germany.202
+	title = germany.202.t
+	desc = germany.202.d
+	picture = GFX_report_event_germany_victory
 	
 	fire_only_once = yes
 	trigger = {
 		tag = GER
 		has_country_flag = hitler_ill
-		OR = {
-		has_government = fascism
-		has_government = nazis
-		}
 	}
 	mean_time_to_happen = {
-	    days = 20
+	    days = 25
 	}
-	#Himmler!
+	
 	option = {
+		name = germany.202.a
 		ai_chance = {
-			base = 30
+			base = 40
 		}
-		name = germany.2.a
-		set_country_flag = himmler_second_in_command
+		hidden_effect = {
+			country_event = { id = germany.3 days = 40 }
+		}
 	}
-	#Goring!
 	option = {
+		name = germany.202.b
 		ai_chance = {
 			base = 60
 		}
-		name = germany.2.b
-		set_country_flag = goring_second_in_command
-	}
-	#The Fuhrer does not need one.
-	option = {
-		ai_chance = {
-			base = 10
+		add_political_power = -25
+		hidden_effect = {
+			country_event = { id = germany.203 days = 35 }
 		}
-		name = germany.2.c
-		set_country_flag = no_second_in_command
+	}
+}
+#Hitler's Wish
+country_event = {
+	id = germany.203
+	title = germany.203.t
+	desc = germany.203.d
+	picture = GFX_report_event_german_advisors_remain
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.203.a
+		ai_chance = {
+			base = 60
+		}
+		hidden_effect = {
+			country_event = { id = germany.3 days = 15 }
+		}
+	}
+	option = {
+		name = germany.203.b
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -15
+		hidden_effect = {
+			country_event = { id = germany.3 days = 30 }
+		}
 	}
 }
 #Hitler dies!
@@ -74,25 +127,11 @@ country_event = {
 	id = germany.3
 	title = germany.3.t
 	desc = germany.3.d
-	picture = GFX_report_event_german_speech
+	picture = GFX_report_event_german_reichstag_gathering
 	
-	fire_only_once = yes
-	trigger = {
-		tag = GER
-		has_country_flag = hitler_ill
-		OR = {
-		has_government = fascism
-		has_government = nazis
-		}
-	}
-	mean_time_to_happen = {
-	    days = 80
-	}
+	is_triggered_only = yes
 	option = {
 		name = germany.3.a
-		trigger = {
-		    has_country_flag = goring_second_in_command
-		}
 		ai_chance = {
 			base = 10
 		}
@@ -122,11 +161,8 @@ country_event = {
 	}
 	option = {
 		name = germany.3.b
-		trigger = {
-		    has_country_flag = himmler_second_in_command
-		}
 		ai_chance = {
-			base = 10
+			base = 6
 		}
 		clr_country_flag = hitler_ill
 		set_country_flag = hitler_ded
@@ -150,52 +186,329 @@ country_event = {
 			traits = {
 			}
 		}
-		news_event = news.1000
+		hidden_effect = { country_event = { days = 60 id = germany.4 } news_event = news.1000 }
+	}
+}
+#Attempt of murder
+country_event = {
+	id = germany.204
+	title = germany.204.t
+	desc = germany.204.d
+	picture = GFX_report_event_rom_mistress
+	
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		has_country_leader = { ruling_only = yes name = "Adolf Hitler" }
+	}
+	mean_time_to_happen = {
+	    days = 19
+	}
+	
+	option = {
+		name = germany.204.a
+		ai_chance = {
+			base = 65
+		}
 	}
 	option = {
-		name = germany.3.c
+		name = germany.204.b
 		ai_chance = {
-			base = 3
+			base = 35
 		}
-		clr_country_flag = hitler_ill
-		set_country_flag = hitler_ded
+		add_political_power = -25
+		hidden_effect = {
+			country_event = { id = germany.205 days = 30 }
+		}
+	}
+}
+#Nuffin
+country_event = {
+	id = germany.205
+	title = germany.205.t
+	desc = germany.205.d
+	picture = GFX_report_event_rom_mistress
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.205.a
+		add_political_power = -5
+		ai_chance = {
+			base = 25
+		}
+	}
+	option = {
+		name = germany.205.b
+		add_political_power = -10
+		ai_chance = {
+			base = 80
+		}
+		hidden_effect = {
+			country_event = { id = germany.207 days = 30 }
+		}
+		hidden_effect = {
+			country_event = { id = germany.206 days = 17 }
+		}
+	}
+}
+#Borman Suicide
+country_event = {
+	id = germany.206
+	title = germany.206.t
+	desc = germany.206.d
+	picture = GFX_report_event_usa_election_generic
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.206.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+#Clue to Baltics?
+country_event = {
+	id = germany.207
+	title = germany.207.t
+	desc = germany.207.d
+	picture = GFX_report_event_tanks_mexico_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.207.a
+		hidden_effect = {
+			country_event = { id = germany.208 days = 14 }
+		}
+	}
+}
+#Brawl of Zalja street
+country_event = {
+	id = germany.208
+	title = germany.208.t
+	desc = germany.208.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.208.a
+		ai_chance = {
+			base = 75
+		}
+		add_manpower = -4
+		hidden_effect = {
+			country_event = { id = germany.209 days = 25 }
+		}
+	}
+	option = {
+		name = germany.208.b
+		ai_chance = {
+			base = 25
+		}
+		add_manpower = -4
+		OST = {
+			country_event = { id = germany.212 days = 2 }
+		}
+	}
+}
+#All clues point to Lohse
+country_event = {
+	id = germany.209
+	title = germany.209.t
+	desc = germany.209.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.209.a
+		trigger = {
+			NOT = { has_country_flag = lohse_denies }
+		}
+		set_country_flag = GER_clues
+		OST = {
+			country_event = { id = germany.212 days = 2 }
+		}
+	}
+	option = {
+		name = germany.209.b
+		trigger = {
+			has_country_flag = lohse_denies
+		}
+		set_country_flag = GER_clues
+		hidden_effect = {
+			country_event = { id = germany.213 days = 30 }
+		}
+	}
+}
+#Accusations!
+country_event = {
+	id = germany.212
+	title = germany.212.t
+	desc = germany.212.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.212.a
+		ai_chance = {
+			base = 75
+		}
+		GER = {
+			country_event = { id = germany.210 days = 7 }
+		}
+	}
+	option = {
+		name = germany.212.b
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 2
+				GER = {
+					has_country_flag = GER_clues
+				}
+			}
+		}
 		kill_country_leader = yes
-		add_political_power = -500
-		set_politics = { ruling_party = fascism elections_allowed = no } 
-		create_country_leader = {
-			name = "The Reichstag"
-			desc = "POLITICS_REICHSTAG_DESC"
-			picture = "Portrait_Germany_Reichstag.dds"
-			expire = "1980.1.1"
-			ideology = fascism_ideology
-			traits = {
-			}
+		create_country_leader = { name = "Friedrich Franz von Mecklenburg-Schwerin" desc = "POLITICS_FRANZ_Vs_DESC" picture = "gfx/leaders/MOS/Friedrich_Franz.dds" expire = "1991.1.1" ideology = nazism traits = { } } 
+		add_political_power = -200
+		add_manpower = -500
+		GER = {
+			country_event = { id = germany.211 days = 7 }
 		}
-		if = {
-		    limit = { has_country_flag = himmler_second_in_command }
-			create_country_leader = {
-				name = "Heinrich Himmler"
-				desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-				picture = "Portrait_Germany_Heinrich_Himmler.dds"
-				expire = "1965.1.1"
-				ideology = nazism
-				traits = {
-				}
-			}
+	}
+}
+#Lohse denies
+country_event = {
+	id = germany.210
+	title = germany.210.t
+	desc = germany.210.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.210.a
+		trigger = {
+			NOT = { has_country_flag = GER_clues }
 		}
-		if = {
-		    limit = { NOT = { has_country_flag = himmler_second_in_command } }
-			create_country_leader = {
-				name = "Hermann Goering"
-				desc = "POLITICS_HEINRICH_HIMMLER_DESC"
-				picture = "Portrait_Germany_Hermann_Goring.dds"
-				expire = "1965.1.1"
-				ideology = nazism
-				traits = {
-				}
-			}
+		set_country_flag = lohse_denies
+		hidden_effect = {
+			country_event = { id = germany.209 days = 28 }
 		}
-		news_event = news.1000
+	}
+	option = {
+		name = germany.210.b
+		trigger = {
+			has_country_flag = GER_clues
+		}
+		set_country_flag = lohse_denies
+		hidden_effect = {
+			country_event = { id = germany.213 days = 30 }
+		}
+	}
+}
+#Coup in Ostland
+country_event = {
+	id = germany.211
+	title = germany.211.t
+	desc = germany.211.d
+	picture = GFX_report_event_soviet_in_riga
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.211.a
+		add_political_power = 75
+		clr_country_flag = lohse_denies
+		clr_country_flag = GER_clues
+	}
+}
+#Intervention in Ostland
+country_event = {
+	id = germany.213
+	title = germany.213.t
+	desc = germany.213.d
+	picture = GFX_report_event_tanks_mexico_city
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.213.a
+		ai_chance = {
+			base = 98
+		}
+		clr_country_flag = lohse_denies
+		clr_country_flag = GER_clues
+		set_country_flag = intervened_in_ostland
+		end_puppet = OST
+		OST = {
+			add_manpower = 5000
+		}
+		declare_war_on = { target = OST type = puppet_wargoal_focus } 
+		hidden_effect = {
+			news_event = { id = news.1010 days = 1 }
+		}
+	}
+	option = {
+		name = germany.213.b
+		ai_chance = {
+			base = 2
+		}
+		clr_country_flag = lohse_denies
+		clr_country_flag = GER_clues
+		add_political_power = -50
+	}
+}
+#Traitors removed from Ostland
+country_event = {
+	id = germany.214
+	title = germany.214.t
+	desc = germany.214.d
+	picture = GFX_report_event_tanks_mexico_city
+	
+	fire_only_once = yes
+	trigger = {
+		tag = GER
+		has_country_flag = intervened_in_ostland
+		NOT = { has_war_with = OST }
+		OR = {
+			OST = { is_puppet_of = GER }
+			OST = { exists = no }
+		}
+	}
+	mean_time_to_happen = { days = 2 }
+	option = {
+		name = germany.214.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 75
+		release_puppet = OST
+		OST = {
+			kill_country_leader = yes
+			create_country_leader = { name = "Friedrich Franz von Mecklenburg-Schwerin" desc = "POLITICS_FRANZ_Vs_DESC" picture = "gfx/leaders/MOS/Friedrich_Franz.dds" expire = "1991.1.1" ideology = nazism traits = { } } 
+			add_political_power = -200
+			transfer_state = 96
+			transfer_state = 94
+			transfer_state = 95
+			transfer_state = 210
+			transfer_state = 208
+			transfer_state = 209
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 204
+			transfer_state = 190
+			transfer_state = 191
+			transfer_state = 189
+			transfer_state = 13
+			transfer_state = 11
+			transfer_state = 12
+		}
 	}
 }
 #Himmler whines
@@ -410,9 +723,6 @@ country_event = {
 			base = 0
 		}
 		name = germany.5.b
-		ai_chance = {
-			base = 100
-		}
 		transfer_state = 93
 		transfer_state = 94
 		transfer_state = 95
