@@ -2,12 +2,9 @@
 state={
 	id=192
 	name="STATE_192"
-	manpower = 1469986
-	
-	state_category = city
 
 	history={
-		owner = RKU
+		owner = ROM
 		victory_points = {
 			11670 10 
 		}
@@ -15,16 +12,21 @@ state={
 			infrastructure = 4
 			industrial_complex = 2
 			arms_factory = 1
-			11670 ={
+			11670 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = SOV
 		add_core_of = UKR
+		add_claim_by = ROM
 	}
 
 	provinces={
-		741 754 3575 3738 3757 9698 9714 11670 11703 
+		414 741 754 3407 3575 3738 3757 9423 9435 9576 9698 9714 11670 11703 
 	}
+	manpower=1969986
+	state_category=city
 }

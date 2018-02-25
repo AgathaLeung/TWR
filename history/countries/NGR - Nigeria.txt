@@ -6,11 +6,10 @@ if = {
 	limit = { NOT = { has_dlc = "Together for Victory" } }
 	set_cosmetic_tag = NGR_ALY
 }
-if = {
+if = { 
+	limit = { has_dlc = "Together for Victory" }
 	set_cosmetic_tag = NGR_UK
 }
-
-set_cosmetic_tag = NGR_UK
 
 # Starting tech
 set_technology = {
