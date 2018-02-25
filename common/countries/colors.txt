@@ -5,7 +5,7 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 160 40 80 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
@@ -254,8 +254,8 @@ YUN = {
 	color_ui = rgb { 222 247 198 }
 }
 USA = {
-	color = rgb { 173 176 255 }
-	color_ui = rgb { 177 150 240 }
+	color = rgb { 76 108 213 }
+	color_ui = rgb { 74 147 255 }
 }
 MON = {
 	#color = HSV { 0.1 0.15 0.4 }
@@ -614,7 +614,7 @@ INO = {
 }
 
 NGR = {
-	color = rgb { 255  51  51 }
+	color = rgb { 180  51  51 }
 	color_ui = rgb { 213  169  121 }
 }
 
