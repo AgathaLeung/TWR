@@ -2365,7 +2365,7 @@
  germany.18.t:0 "Agricultural Subsidies Failure"
  germany.18.d:0 "The subsidies started by [Root.GetLeader] to help our farms modernize have seen near zero success, with many properties choosing to spend the money on luxuries instead of modernizing their equipment. We will have to end the program."
  germany.18.a:0 "Damn sloths!"
- 
+
  germany.200.t:0 "Himmler's Bids for Power"
  germany.200.d:0 "Heinrich Himmler is one of the top candinates for succeeding Hitler, and within his closest group of aquintances he is the undeniable top candinate for succeeding Hitler. The SS-Reichsfuhrer has a long career behind him, and he has seen the oppurtunity to extend his reach within Germany, with Hitler's health seeming more fragile by the day."
  germany.201.a:0 "He can take his chances."
@@ -2394,7 +2394,7 @@
  germany.207.t:0 "Clues Lead to the Baltics"
  germany.207.d:0 "An information agent, who our public detectives have been in contact with, has revealed information that traces a trail of money from Riga to Bormann's pockets. We will have to look into this further."
  germany.207.a:0 "Excellent, progress."
- germany.208.t:0 "Brawl of Zalja Street" 
+ germany.208.t:0 "Brawl of Zalja Street"
  germany.208.d:0 "While inquiring about the ongoing murder attempt case, our men have been ambushed in Riga! The group was pounced on by a bunch of native men, who proceeded to beat four of our field investigators senseless."
  germany.208.a:0 "Probably just local gangmembers."
  germany.208.b:0 "Inquire Lohse about this!"
@@ -2420,7 +2420,7 @@
  germany.214.t:0 "Traitors removed!"
  germany.214.d:0 "With a quick strike into Riga, treasonous kleptocrat Hinrich Lohse has been arrested and Friedrich Franz has been put into his place. Another display of German efficiency!"
  germany.214.a:0 "Indeed."
- 
+
  germany.50.t:0 "Beginning Reichsbahn Ost"
  germany.50.d:0 "The railway networks of the eastern, conquered territories of the [Root.GetName] have always been limited, scattered and low in quality. Recently [Root.GetLeader] has ordered the construction of a massive united railway network, complete with 50+ stations and weekly schedules for this area. The project is named 'Reichsbahn Ost' \n\nSome have criticised this plan as foolish and overcomplicated, with experts pointing to the flaws of the proposed rail-grid and the current financial situation of Germany. Nevertheless Reichsbahn Ost is getting built, and what is certain is that our great nation will gain prestige, jobs and might from it."
  germany.50.a:0 "It'll get all the funding it needs!"
@@ -2471,10 +2471,10 @@
  railway_costs6:0 "Railway Construction Costs"
  railway_costs7:0 "Railway Construction Costs"
  railway_costs8:0 "Railway Construction Costs"
- 
+
  gain_militia_ger_1:0 "Gain 10 Militia-Divisions.\n"
  gain_militia_ger_3:0 "Gain §Y5 Militia-Divisions.\n"
- 
+
  germany.100.t:0 "The Germanic State of Gotenland"
  germany.100.d:0 "Ever since the German victory on the eastern front, the Crimea region had been a focus point for colonisation. With almost all of the local Ukrainian, Russian and Tartar populations killed or expelled, German civilian colonists arrived from the Reich by boat and train to the new territory to build a new in the colonies. Reichskomissariat Gotenland became a 'jewel in the crown' of the Nazi eastern colonies, and both a civilian and military hub for the Greater Reich. \n\nWith the outbreak of the civil war, the region was quickly taken over by SS-forces, but not long after Himmler declared total victory over the peninsula, it was cut off from the mainland in the north by invading forces. With the civilian government long dead, SS commander Jakob Sporrenberg took full military control, and with no sign of relief, declared an independent Nazi state, the Germanic State of Gotenland. \n\nSS rule was especially strict in this new state. Those few non-Germans that were left were annihilated soon after the nation's founding. All able-bodied civilians were conscripted either to defend the young state or to work to support the army in building and maintaining military infrastructure. Colonists who had enjoyed a luxurious seaside life only a few years before were now in a living hell, surrounded by enemies and fighting for survival."
  germany.100.a:0 "We wish them the best of luck."
@@ -2484,6 +2484,9 @@
  germany.102.d:0 "Germania, or Berlin as it was called long before the nazis came to power, has been the centre of German politics and society ever since the Prussians, and it was the place from where Hitler had the most power, and support for the Nazis has been high. \n\n Even though the original revolt failed to seize control of the Berlin area, the general sentiment has been on Himmler's side, with the Bavarian Göring having a shaky powerbase. And now, seeing the might of the New German Reich, and with the backing of Heinrich Himmler, the people of Berlin have started an open uprising, seizing the former capital of the legitimist government and much of it's supply storages."
  germany.102.a:0 "The fight heats up!"
  germany.103.a:0 "Damned dogs!"
+ germany.104.t:0 "We have nuked London!"
+ germany.104.d:0 "Today the BBC has confirmed that London has been nuked and destroyed by the German Reich many peope assume that it lanched from a V5 rocket from either Germanina, Hamburg or even Brussels. Though most of the royal family, the pm and most of paraliment is ok but much of London's people have been pushed underground or dead. With Mosley and Edward both heading back to Britian, many have speculated that they will rise up. Will Britian finally fall to the Germans?"
+ germany.104.t:0 "Our panzers and trains will be ridding around Berlin!"
  citizens_of_berlin_rise_up:0 "§YThe citizens of Germania rise up!§!\n"
  transfer_state_brandenburg_tt:0 "Transfer state §YBrandenburg§! to §YNew German Reich§!\n"
 
@@ -2492,7 +2495,7 @@
  france.100.t:0 "Philippe Pétain dies"
  france.100.d:0 "Philippe Pétain, the lion of Verdun and leader of France since its invasion in 1940, has died. While his government scrambles to keep the country together, weakness in its overlords in Berlin is prompting fears that this increasingly unpopular regime, having lost its figurehead, may have its power questioned."
  france.100.a:0 "Pierre Laval will take over for now"
- 
+
  france.101.t:0 "The French Spring"
  france.101.d:0 "The new regime in France had been losing popularity ever since the end of the war, and with the death of its figurehead things came to a head. With both the government and its 'allies' in Berlin seemingly powerless to stop them, the people have come into the streets in ever greater numbers. Today, thousands march in the streets of Paris demanding the resignation of Laval and free elections. Troops are being deployed onto the streets, but nobody is sure if they'll remain loyal to the former 'Vichy' regime, or join the protesters in their demands."
  france.101.a:0 "The army obeys, the protesters are crushed"
@@ -2508,7 +2511,7 @@
  soviet.103.t:0 "Khrushchev seizes power"
  soviet.103.d:0 "A second power struggle in the Soviet Union ended with Khruschev victorious. Through increasingly impassioned and unsubtle criticisms of Beria, he has brought the aparatus of power into his control. With Beria removed from power, it seems the future path of the remnants of the once mighty USSR has shifted."
  soviet.103.a:0 "A new chapter for the Soviet people"
- 
+
  vets_and_refugees:0 "Vets and Refugees"
  vets_and_refugees_desc:0 "The great retreat from Moscow and the occupation of our homelands has left a large portion of the former red army officers and veterans exiled in our lands. This, combined with the countless refugees escaping death over the de-facto border, has bolstered our population and created a diaspora that we should integrate into our workforce, in order to guarantee their right to someday return home."
 
