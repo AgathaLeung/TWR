@@ -340,7 +340,7 @@ country_event = {
 		}
 		set_country_flag = GER_clues
 		hidden_effect = {
-			country_event = { id = germany.213 days = 30 }
+			country_event = { id = germany.213 days = 10 }
 		}
 	}
 }
@@ -408,7 +408,7 @@ country_event = {
 		}
 		set_country_flag = lohse_denies
 		hidden_effect = {
-			country_event = { id = germany.213 days = 30 }
+			country_event = { id = germany.213 days = 10 }
 		}
 	}
 }
@@ -446,6 +446,7 @@ country_event = {
 		clr_country_flag = GER_clues
 		set_country_flag = intervened_in_ostland
 		end_puppet = OST
+		remove_from_faction = OST
 		OST = {
 			add_manpower = 5000
 		}
