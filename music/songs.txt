@@ -8,6 +8,16 @@ music = {
 	}
 }
 
+music = {
+	song = "moscow_nights"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+
 # PEACE SONGS ##################
 music = {
 	song = "general_peace_1"
