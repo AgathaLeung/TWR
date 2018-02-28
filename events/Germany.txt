@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # German Events
 ###########################
 
@@ -340,7 +340,7 @@ country_event = {
 		}
 		set_country_flag = GER_clues
 		hidden_effect = {
-			country_event = { id = germany.213 days = 30 }
+			country_event = { id = germany.213 days = 10 }
 		}
 	}
 }
@@ -408,7 +408,7 @@ country_event = {
 		}
 		set_country_flag = lohse_denies
 		hidden_effect = {
-			country_event = { id = germany.213 days = 30 }
+			country_event = { id = germany.213 days = 10 }
 		}
 	}
 }
@@ -446,6 +446,7 @@ country_event = {
 		clr_country_flag = GER_clues
 		set_country_flag = intervened_in_ostland
 		end_puppet = OST
+		remove_from_faction = OST
 		OST = {
 			add_manpower = 5000
 		}
@@ -1743,5 +1744,25 @@ country_event = {
 		set_equipment_fraction = 0.9
 		custom_effect_tooltip = transfer_state_brandenburg_tt
 		custom_effect_tooltip = citizens_of_berlin_rise_up
+	}
+}
+country_event = {
+	id = germany.104
+	title = germany.104.t
+	desc = germany.104.d
+	picture = GFX_report_event_military_planning
+	
+	is_triggered_only = yes
+	trigger = {
+			tag = GER
+			has_civil_war = no
+			has_war_with = ENG
+	
+	option = {
+		name = germany.104.a
+		ai_chance = {
+			base = 100
+		}
+		
 	}
 }

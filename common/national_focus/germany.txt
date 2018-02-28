@@ -659,7 +659,7 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = {
-						has_government = fascism
+						OR = { has_government = fascism has_government = nazis }
 					}
 					set_politics = { ruling_party = fascism elections_allowed = no }
 				}
@@ -681,7 +681,7 @@ focus_tree = {
 			complete_national_focus = GER_reform
 			if = {
 				limit = {
-					has_government = fascism
+					NOT = { has_government = neutrality }
 				}
 				set_politics = { ruling_party = neutrality elections_allowed = no }
 				retire_country_leader = yes
@@ -896,7 +896,7 @@ focus_tree = {
 		    factor = 2
 		}
 		completion_reward = {
-			add_popularity = { ideology = fascism popularity = 0.3 }
+			add_popularity = { ideology = nazis popularity = 0.3 }
 		}
 	}
 	focus = {

@@ -13,8 +13,8 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 110 147 200 }
-	color_ui = rgb { 47 172 255 }
+	color = rgb { 191 191 50 }
+	color_ui = rgb { 207 197 75 }
 }
 FRA = {
 	color = rgb { 42 42 130 }
@@ -86,8 +86,8 @@ ALB = {
 	color_ui = rgb { 194 59 133 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 140 17 93 }
+	color_ui = rgb { 144 30 92 }
 }
 DEN = {
 	color = rgb { 153 116 93 }
@@ -102,7 +102,7 @@ POR = {
 	color_ui = rgb { 51 151 91 }
 }
 FIN = {
-	color = rgb { 205 212 228 }
+	color = rgb { 176 191 232 }
 	color_ui = rgb { 255 255 255 }
 }
 IRE = {
@@ -432,8 +432,8 @@ ANG = {
 }
 
 COG = {
-	color = rgb { 152 159 209 }
-	color_ui = rgb { 152 159 209 }
+	color = rgb { 195 237 175 }
+	color_ui = rgb { 195 237 175 }
 }
 MZB = {
 	color = rgb { 112 62 90 }
