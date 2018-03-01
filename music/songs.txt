@@ -9,12 +9,18 @@ music = {
 }
 
 music = {
-	song = "moscow_nights"
-	chance = {
-		modifier = {
-			factor = 0.5
-		}		
-	}
+    song = "moscow_nights"
+
+    chance = {
+        factor = 3
+        modifier = {
+            factor = 0
+            AND = {
+                NOT = { tag = SOV }
+                NOT = { tag = PRC }
+            }
+        }
+    }
 }
 
 
