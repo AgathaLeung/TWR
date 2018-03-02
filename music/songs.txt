@@ -13,6 +13,7 @@ music = {
 
     chance = {
         factor = 3
+        has_war = no
         modifier = {
             factor = 0
             AND = {
