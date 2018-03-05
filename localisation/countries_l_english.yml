@@ -20,7 +20,7 @@
  GER_social_democrat_DEF:0 "The German Republic"
  GER_nazis:0 "Germany"
  GER_nazis_DEF:0 "Nazi Germany"
- 
+
  ENG_fascism:0 "British Empire"
  ENG_nazis:0 "British Empire"
  ENG_fascism_DEF:0 "The British Empire"
@@ -1539,7 +1539,7 @@
  BUR_liberal_ADJ:0 "Burmese"
  BUR_neutrality_ADJ:0 "Burmese"
  BUR_communism_ADJ:0 "Burmese"
- 
+
  ASS_fascism:0 "Princedom of Assam"
  ASS_fascism_DEF:0 "The Princedom of Assam"
  ASS_nazis:0 "Aryan Assam"
@@ -1561,7 +1561,7 @@
  ASS_liberal_ADJ:0 "Assamese"
  ASS_neutrality_ADJ:0 "Assamese"
  ASS_communism_ADJ:0 "Assamese"
- 
+
  SKM_fascism:0 "Holy Empire of Sikkim"
  SKM_fascism_DEF:0 "The Holy Empire of Sikkim"
  SKM_nazis:0 "Holy Empire of Sikkim"
@@ -1635,7 +1635,7 @@
  FAR_democratic_ADJ:0 "Chitan"
  FAR_neutrality_ADJ:0 "Chitan"
  FAR_communism_ADJ:0 "Chitan"
- 
+
  CAR_fascism:0 "Caribbean Free State"
  CAR_fascism_DEF:0 "The Caribbean Free State"
  CAR_democratic:0 "Caribbean Dominion"
@@ -1709,7 +1709,7 @@
  NGR_nazis_ADJ:0 "Nigerian"
  NGR_neutrality_ADJ:0 "Nigerian"
  NGR_communism_ADJ:0 "Nigerian"
- 
+
  HYD_fascism:0 "Hyderabadi Empire"
  HYD_fascism_DEF:0 "The Hyderabadi Empire"
  HYD_nazis:0 "Hyderabadi Empire"
@@ -1731,7 +1731,7 @@
  HYD_nazis_ADJ:0 "Hyderabadi"
  HYD_neutrality_ADJ:0 "Hyderabadi"
  HYD_communism_ADJ:0 "Hyderabadi"
- 
+
  TAM_fascism:0 "Imperial Madras"
  TAM_fascism_DEF:0 "Madras"
  TAM_nazis:0 "Imperial Madras"
@@ -1753,7 +1753,7 @@
  TAM_nazis_ADJ:0 "Tamil"
  TAM_neutrality_ADJ:0 "Tamil"
  TAM_communism_ADJ:0 "Tamil"
- 
+
  MAR_fascism:0 "Honourable Marathi State"
  MAR_fascism_DEF:0 "The Honourable Marathi State"
  MAR_nazis:0 "Honourable Marathi State"
@@ -1785,6 +1785,34 @@
  MOR_social_democrat:0 "Morocco"
  MOR_social_democrat_DEF:0 "Morocco"
 
+ KOE_fascism:0 "Kingdom of England"
+ KOE_nazis_DEF:0 "The Kingdom of England"
+ KOE_nazis:0 "Kingdom of England"
+ KOE_fascism_DEF:0 "The Kingdom of England"
+ KOE_democratic:0 "English Republic"
+ KOE_democratic_DEF:0 "The English Republic"
+ KOE_liberal:0 "English Republic"
+ KOE_liberal_DEF:0 "The English Republic"
+ KOE_social_democrat:0 " English Republic"
+ KOE_social_democrat_DEF:0 "The English Republic"
+ KOE_neutrality:0 "Kingdom of England"
+ KOE_neutrality_DEF:0 "The Kingdom of England"
+ KOE_communism:0 "Union of England"
+ KOE_communism_DEF:0 "The Union of England"
+ KOE_fascism_ADJ:0 "British"
+ KOE_democratic_ADJ:0 "British"
+ KOE_social_democrat_ADJ:0 "British"
+ KOE_liberal_ADJ:0 "British"
+ KOE_nazis_ADJ:0 "British"
+
+
+
+
+
+
+
+
+
  FACTION_NAME_DEMOCRATIC_1:0 "The $CONTINENT_ADJ$ Association"
  FACTION_NAME_DEMOCRATIC_2:0 "The $CONTINENT_ADJ$ Entente"
  FACTION_NAME_DEMOCRATIC_3:0 "The $LEADER_COUNTRY_ADJ$ Concordat"
@@ -1806,4 +1834,3 @@
  FACTION_NAME_NONALIGNED_3:0 "The $CONTINENT$ Alliance"
  FACTION_NAME_NONALIGNED_4:0 "Confederate $CONTINENT_ADJ$ Nations"
  FACTION_NAME_NONALIGNED_5:0 "The $LEADER_COUNTRY$ Coalition"
- 

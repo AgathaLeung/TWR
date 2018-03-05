@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # News Events
 ###########################
 
@@ -221,3 +221,22 @@ news_event = {
 }
 
 
+news_event = {
+	id = news.1011
+	title = news.1011.t
+	desc = news.1011.d
+	#picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes 
+			
+
+	
+	option = {
+		name = news.1011.a
+		
+			}
+		}
+	}
+}

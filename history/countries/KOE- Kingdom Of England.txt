@@ -67,7 +67,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 35
+			popularity = 20
 		}
 		
 		communism = {
@@ -79,11 +79,11 @@ set_politics = {
 		}
 		
 		nazis = {
-			popularity = 15
+			popularity = 30
 		}
 	}
 	
-	ruling_party = fascism
+	ruling_party = nazis
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = no

@@ -213,3 +213,40 @@ country_event = {
 
 	}
 }
+country_event = {
+	id = britain.108
+	title = britain.108.t
+	desc = britain.108.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		has_civil_war = no
+		has_war_with = GER
+		has_idea = london_has_been_nuked
+	}
+
+	option = {
+		name = britain.108.a
+		ai_chance = { factor = 50 }
+		start_civil_war = {
+				ideology = nazis
+				size = 0.45
+				capital = 132
+				states = { 132 122 128 }
+			}
+		}
+	option = {
+		name = britain.108.b
+		ai_chance = { factor = 50 }
+		start_civil_war = {
+				ideology = nazis
+				size = 0.45
+				capital = 132
+				states = { 132 122 128 }
+			}
+
+	}
+}
