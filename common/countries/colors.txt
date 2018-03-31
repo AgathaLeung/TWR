@@ -13,7 +13,7 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 191 191 50 }
+	color = rgb { 103 133 181 }
 	color_ui = rgb { 207 197 75 }
 }
 FRA = {
@@ -646,12 +646,4 @@ TAM = {
 MAR = {
 	color = rgb { 247 216 131 }
 	color_ui = rgb { 255 187 0 }
-}
-KOE = {
-	color = rgb { 81  0  0 }
-	color_ui = rgb { 255 73 121 }
-}
-KOE = {
-	color = rgb { 0  102  16 }
-	color_ui = rgb { 0  102  16 }
 }

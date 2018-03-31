@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  GER_fascism:0 "Germany"
  GER_fascism_DEF:0 "Germany"
  GER_democratic:0 "German Republic"
@@ -85,12 +85,12 @@ l_english:
  SWE_liberal_ADJ:0 "Swedish"
  SWE_neutrality_ADJ:0 "Swedish"
  SWE_communism_ADJ:0 "Swedish"
- FRA_fascism:1 "Nation Française"
+ FRA_fascism:1 "France"
  FRA_fascism_DEF:1 "Nation Française"
- FRA_democratic:0 "France"
- FRA_democratic_DEF:0 "France"
- FRA_neutrality:0 "France"
- FRA_neutrality_DEF:0 "France"
+ FRA_democratic:0 "French Republic"
+ FRA_democratic_DEF:0 "French Republic"
+ FRA_neutrality:0 "Provisional France"
+ FRA_neutrality_DEF:0 "Provisional France"
  FRA_communism:0 "French Commune"
  FRA_communism_DEF:0 "The French Commune"
  FRA_fascism_ADJ:1 "French"
@@ -1805,25 +1805,7 @@ l_english:
  KOE_liberal_ADJ:0 "British"
  KOE_nazis_ADJ:0 "British"
 
- WAL_fascism:0 “Reichsprotektorat Wales”
- WAL_nazis_DEF:0 "The Reichsprotektorat Wales"
- WAL_nazis:0 "Reichsprotektorat Wales"
- WAL_fascism_DEF:0 "The Reichsprotektorat Wales"
- WAL_democratic:0 “Wales”
- WAL_democratic_DEF:0 "Wales"
- WAL_liberal:0 "Wales"
- WAL_liberal_DEF:0 "Wales"
- WAL_social_democrat:0 "Wales"
- WAL_social_democrat_DEF:0 "Wales"
- WAL_neutrality:0 "Wales"
- WAL_neutrality_DEF:0 "Wales"
- WAL_communism:0 "Welsh Union"
- WAL_communism_DEF:0 "Welsh Union"
- WAL_fascism_ADJ:0 “Welsh”
- WAL_democratic_ADJ:0 “Welsh”
- WAL_social_democrat_ADJ:0 “Weksh”
- WAL_liberal_ADJ:0 “Welsh”
- WAL_nazis_ADJ:0 “Welsh”
+
 
 
 
