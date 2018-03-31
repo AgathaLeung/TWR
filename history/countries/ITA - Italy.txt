@@ -44,7 +44,7 @@ set_technology = {
 
 # DIPLOMACY / WAR 36
 
-create_faction = "Novus Imperium Romanum"
+create_faction = "Mediterranean Pact"
 
 if = {
 	limit = {

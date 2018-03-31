@@ -67,7 +67,7 @@ set_politics = {
 		}
 
 		fascism = {
-			popularity = 15
+			popularity = 10
 		}
 		
 		communism = {
@@ -82,31 +82,6 @@ set_politics = {
 	elections_allowed = yes
 }
 
-
-1939.1.1 = {
-	set_politics = {
-
-		parties = {
-			democratic = { 
-				popularity = 85
-			}
-
-			fascism = {
-				popularity = 15
-			}
-			
-			communism = {
-				popularity = 5
-				#banned = no #default is no
-			}
-		}
-		
-		ruling_party = democracy
-		last_election = "1936.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-}
 
 create_country_leader = {
 	name = "Shigeru Yoshida"
