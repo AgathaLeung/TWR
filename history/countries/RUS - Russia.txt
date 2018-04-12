@@ -72,7 +72,7 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1951.1.14"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 
 create_country_leader = {

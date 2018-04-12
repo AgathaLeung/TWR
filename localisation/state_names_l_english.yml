@@ -760,5 +760,8 @@
  STATE_759:1 "Kunlun Shan"
  STATE_760:0 "Dabancheng"
  STATE_761:0 "Hulunbuir"
- STATE_762:0 "Sikkim"
- STATE_763:0 "Suez Canal"
+ STATE_762:0 "Voivodeship Silesia"
+ STATE_763:0 "Sikkim"
+ STATE_764:0 "Suez Canal"
+ STATE_765:0 "Vojvodina"
+

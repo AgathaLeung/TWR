@@ -185,7 +185,7 @@ set_politics = {
 		}
 	}
 	
-	ruling_party = democratic
+	ruling_party = liberal
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
@@ -216,21 +216,29 @@ set_autonomy = {
 
 		parties = {
 			democratic = { 
-				popularity = 99
+				popularity = 42
+			}
+
+			liberal = { 
+				popularity = 45
 			}
 
 			fascism = {
-				popularity = 0
+				popularity = 5
 			}
 			
 			communism = {
-				popularity = 1
+				popularity = 4
 				#banned = no #default is no
+			}
+
+			neutrality = {
+				popularity = 4
 			}
 		}
 		
-		ruling_party = democratic
-		last_election = "1936.11.3"
+		ruling_party = liberal
+		last_election = "1948.11.2"
 		election_frequency = 48
 		elections_allowed = yes
 	}
@@ -241,7 +249,7 @@ create_country_leader = {
 	desc = "POLITICS_HARRY_TRUMAN_DESC"
 	picture = "Portrait_USA_Harry_Truman.dds"
 	expire = "1965.1.1"
-	ideology = conservatism
+	ideology = liberal
 	traits = {
 		#
 	}

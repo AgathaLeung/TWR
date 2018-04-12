@@ -1,4 +1,4 @@
-capital = 743
+capital = 764
 
 oob = "SKM_1952"
 
