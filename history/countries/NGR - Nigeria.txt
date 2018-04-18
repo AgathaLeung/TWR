@@ -130,7 +130,7 @@ set_technology = {
 				popularity = 15
 			}
 
-			social_democrat = {
+			socdem = {
 				popularity = 30
 			}
 		}
@@ -139,15 +139,16 @@ set_technology = {
 		last_election = "1938.5.18"
 		election_frequency = 60
 		elections_allowed = no
+		}
+}
 
 create_country_leader = {
 	name = "Sir John Macpherson"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_PG.dds"
-	expire = "1980.1.1"
+	picture = 
+	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
-				
+		#
 	}
 }
 
