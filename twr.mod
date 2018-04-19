@@ -6,4 +6,4 @@ tags={
 	"Events"
 	"Map"
 }
-supported_version="1.5.2"
+supported_version="1.5.3"
