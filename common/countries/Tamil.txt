@@ -1,6 +1,0 @@
-
-
-graphical_culture = commonwealth_gfx
-graphical_culture_2d = asian_2d
-
-color = { 188  235  21 }
