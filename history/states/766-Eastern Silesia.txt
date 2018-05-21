@@ -1,0 +1,23 @@
+state={
+	id=766
+	name="STATE_766"
+	provinces={
+		506 6464 9412 
+	}
+resources={
+	steel=8.000}
+	history={
+		owner = GER
+		
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
+		}
+		add_core_of = POL
+
+	}
+	
+	manpower=1056542
+	buildings_max_level_factor=1.000
+   state_category=city
+}
