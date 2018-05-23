@@ -1,0 +1,21 @@
+
+state={
+	id=764
+	name="STATE_764"
+
+	history={
+		owner = ITA
+		buildings = {
+
+		}
+		add_core_of = FRA
+
+	}
+
+	provinces={
+		778 9603 11573 
+	}
+	manpower=255245
+	buildings_max_level_factor=1.000
+	state_category=city
+}

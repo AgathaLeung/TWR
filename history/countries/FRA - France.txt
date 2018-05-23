@@ -1,0 +1,319 @@
+﻿#########################################################################
+# France
+#########################################################################
+capital = 16
+set_stability = 0.5
+set_war_support = 0.15
+oob = "FRA_1936"
+set_research_slots = 4
+set_convoys = 300
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+
+	fighter_1933 = 1
+	naval_bomber1 = 1
+	cv_fighter_1933 = 1
+	Torpedo_bomber_1936 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS_1936 = 1
+	strategic_bomber0 = 1
+
+	# Armour Tech
+
+	light_tank_1917 = 1
+
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+	light_tank_1934 = 1	
+
+	#Naval Stuff
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	destroyer_1922 = 1
+	destroyer_1933 = 1	
+	
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+	light_cruiser_1922 = 1
+	light_cruiser_1933 = 1	
+	light_cruiser_1936 = 1
+	
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+	heavy_cruiser_1922 = 1
+	heavy_cruiser_1933 = 1	
+	heavy_cruiser_1936 = 1	
+	
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+	submarine_1922 = 1	
+	submarine_1933 = 1	
+	submarine_1936 = 1
+	
+	heavy_submarine_1933 = 1
+	
+	battlecruiser_1906 = 1
+	battlecruiser_1912 = 1
+	battlecruiser_1916 = 1
+	battlecruiser_1933 = 1
+	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1	
+	battleship_1933 = 1
+	
+	escort_carrier_1912 = 1
+	escort_carrier_1916 = 1
+	escort_carrier_1922 = 1
+	
+	carrier_1922 = 1	
+	
+	transport = 1
+
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 23 }		
+		paternal_autocrat = { popularity = 10 }		
+		conservative = { popularity = 7 }		
+		liberal = { popularity = 17 }		
+		social_democrat = { popularity = 16 }		
+		left_wing_radical = { popularity = 15 }		
+		leninist = { popularity = 5 }		
+		stalinist = { popularity = 7 }	
+	}
+	
+	ruling_party = fascist
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+add_ideas = {
+	FRA_victors_of_wwi
+	FRA_disjointed_government
+	FRA_protected_by_the_maginot_line
+# Laws & Policies
+	limited_conscription
+# Cabinet
+	FRA_HoG_Albert_Sarraut
+	FRA_FM_Pierre_Etienne_Flandin
+	FRA_AM_Vincent_Auriol
+	FRA_MoS_Marx_Dormoy
+	FRA_HoI_Joseph_Paganon
+# Military Staff
+	FRA_CoStaff_Maurice_Gamelin
+	FRA_CoArmy_Maurice_Gamelin
+	FRA_CoNavy_JeanFrancois_Darlan
+	FRA_CoAir_Victor_Denain	
+}
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "Jacques Doriot"
+	desc = ""
+	picture = "France_NS_Jacques_Doriot.tga"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Vichy_PA_Philippe_Petain.tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Charles Maurras"
+	desc = ""
+	picture = "France_PA_Charles_Maurras.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+# Conservatism
+create_country_leader = {
+	name = "Albert Lebrun"
+	desc = ""
+	picture = "France_L_Albert_Lebrun.tga"
+	expire = "1938.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism
+create_country_leader = {
+	name = "Albert Lebrun"
+	desc = ""
+	picture = "France_L_Albert_Lebrun.tga"
+	expire = "1938.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Vincent Auriol"
+	desc = ""
+	picture = "France_SD_Vincent_Auriol.tga"
+	expire = "1938.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "CNT-F"
+	desc = ""
+	picture = "France_LWR_CNT-F.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Boris Souvarine"
+	desc = ""
+	picture = "France_BL_Boris_Souvarine.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Maurice Thorez"
+	desc = ""
+	picture = "France_ML_Maurice_Thorez.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	picture = "Portrait_France_Maxime_Weygand.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Alphonse Georges"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = { defensive_doctrine old_guard trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster brilliant_strategist cavalry_officer war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = { armor_officer career_officer trait_cautious  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  armor_officer harsh_leader media_personality }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = {  armor_officer trait_reckless career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  trickster trait_cautious career_officer infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles Huntziger"
+	picture = "portrait_france_charles_huntziger.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
