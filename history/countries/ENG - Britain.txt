@@ -1,0 +1,563 @@
+﻿#########################################################################
+# Britain
+#########################################################################
+capital = 126
+oob = "ENG_1936"
+set_stability = 0.6
+set_war_support = 0.1
+set_research_slots = 5
+set_convoys = 800
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+# Armour Tech
+	light_tank_1917 = 1
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+	light_tank_1934 = 1
+# Air Tech	
+	fighter_1933 = 1
+	cv_fighter_1933 = 1
+	Torpedo_bomber_1936 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS_1936 = 1
+	cv_CAS_1933 = 1
+	strategic_bomber0 = 1
+	strategic_bomber1 = 1
+#Naval Tech
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	destroyer_1922 = 1
+	destroyer_1933 = 1		
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+	light_cruiser_1922 = 1
+	light_cruiser_1933 = 1	
+	light_cruiser_1936 = 1		
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+	heavy_cruiser_1922 = 1
+	heavy_cruiser_1933 = 1	
+	heavy_cruiser_1936 = 1		
+	battlecruiser_1906 = 1
+	battlecruiser_1912 = 1
+	battlecruiser_1916 = 1
+	battlecruiser_1933 = 1	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1	
+	battleship_1933 = 1		
+	escort_carrier_1912 = 1
+	escort_carrier_1916 = 1
+	escort_carrier_1922 = 1
+	light_carrier_1930 = 1	
+	carrier_1922 = 1	
+	carrier_1930 = 1
+	carrier_1933 = 1		
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+	submarine_1922 = 1	
+	submarine_1933 = 1	
+	transport = 1
+
+	trench_warfare = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 0 }		
+		paternal_autocrat = { popularity = 2 }		
+		conservative = { popularity = 39 }	
+		liberal = { popularity = 9 }		
+		social_democrat = { popularity = 48 }		
+		left_wing_radical = { popularity = 2 }		
+		leninist = { popularity = 0 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	stiff_upper_lip
+	ENG_the_war_to_end_all_wars
+	george_v
+# Cabinet
+	ENG_HoG_Stanley_Baldwin
+	ENG_FM_Anthony_Eden
+	ENG_AM_Neville_Chamberlain
+	ENG_MoS_John_Simon
+	ENG_HoI_Hugh_Sinclair
+# Military Staff
+	ENG_CoStaff_A_MontgomeryMassingberd
+	ENG_CoArmy_A_MontgomeryMassingberd
+	ENG_CoNavy_Ernle_Chatfield
+	ENG_CoAir_Owen_Boyd
+}
+######################
+# Diplomacy
+#######################
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MAL
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_puppet
+		freedom_level = 0.35
+	}
+	else = {
+		puppet = RAJ
+		puppet = MAL
+	}
+}
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = commonwealth_research
+}
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "William Joyce"
+	desc = ""
+	picture = "Britain_NS_William_Joyce.tga"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Oswald Mosley"
+	desc = ""
+	picture = "Britain_FA_Oswald_Mosley.tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Edward VIII"
+	desc = ""
+	picture = "Britain_PA_Oswald_Mosley.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+# Conservatism
+create_country_leader = {
+	name = "Stanley Baldwin"
+	desc = ""
+	picture = "Britain_C_Stanley_Baldwin.tga"
+	expire = "1938.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism
+create_country_leader = {
+	name = "J. R. Clynes"
+	desc = ""
+	picture = "Britain_L_JR_Clynes.tga"
+	expire = "1938.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Clement Attlee"
+	desc = ""
+	picture = "Britain_SD_Clement_Attlee.tga"
+	expire = "1938.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "James Maxton"
+	desc = ""
+	picture = "Britain_LWR_James_Maxton.tga"
+	expire = "1965.1.1"
+	ideology = left_wing_radicalism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Tony Cliff"
+	desc = ""
+	picture = "Britain_BL_Tony_Cliff.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Harry Pollitt"
+	desc = ""
+	picture = "Britain_ML_Harry_Pollitt.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_field_marshal = {
+	name = "Alan Brooke"
+	picture = "Portrait_Britain_Alan_Brooke.dds"
+	traits = { defensive_doctrine trait_cautious career_officer }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 5
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Bernard Montgomery"
+	picture = "Portrait_Britain_Bernard_Montgomery.dds"
+	traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
+	skill = 4 
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Claude Auchinleck"
+	picture = "Portrait_Britain_Claude_Auchinleck.dds"
+	traits = { inflexible_strategist career_officer }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Neil Ritchie"
+	picture = "Portrait_Britain_Neil_Ritchie.dds"
+	traits = { inflexible_strategist armor_officer politically_connected  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alan Cunningham"
+	picture = "Portrait_Britain_Alan_Cunningham.dds"
+	traits = {}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "William Slim"
+	picture = "Portrait_Britain_William_Slim.dds"
+	traits = { trickster war_hero }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Richard O'Connor"
+	picture = "Portrait_Britain_Richard_OConnor.dds"
+	traits = {  }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "William Platt"
+	picture = "Portrait_Britain_William_Platt.dds"
+	traits = {  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "George Giffard"
+	picture = "Portrait_Britain_George_Giffard.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Harold Alexander"
+	picture = "Portrait_Britain_Harold_Alexander.dds"
+	traits = { politically_connected }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Jackie Smyth"
+	picture = "Portrait_Britain_John_Jackie_Smyth.dds"
+	traits = { old_guard }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Thomas Jacomb Hutton"
+	picture = "Portrait_Britain_Thomas_Jacomb_Hutton.dds"
+	traits = { old_guard }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Arthur Percival"
+	picture = "Portrait_Britain_Arthur_Percival.dds"
+	traits = {  trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Merton Beckwith-Smith"
+	picture = "Portrait_Britain_Merton_Beckwith_Smith.dds"
+	traits = { commando }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Henry Pownall"
+	picture = "Portrait_Britain_Henry_Pownall.dds"
+	traits = {  trickster }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "John Vereker Lord Gort"
+	picture = "Portrait_Britain_John_Vereker.dds"
+	traits = { politically_connected trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henry Wilson"
+	picture = "Portrait_Britain_Henry_Maitland_Wilson.dds"
+	traits = { old_guard politically_connected }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "William Gott"
+	picture = "Portrait_Britain_William_Gott.dds"
+	traits = { armor_officer war_hero inflexible_strategist }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jock Campbell"
+	picture = "Portrait_Britain_Jock_Campbell.dds"
+	traits = { armor_officer  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Oliver Leese"
+	picture = "Portrait_Britain_Oliver_Leese.dds"
+	traits = {  armor_officer harsh_leader politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Miles Dempsey"
+	picture = "Portrait_Britain_Miles_Dempsey.dds"
+	traits = { brilliant_strategist infantry_officer career_officer }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Brian Horrocks"
+	picture = "Portrait_Britain_Brian_Horrocks.dds"
+	traits = {  armor_officer career_officer war_hero }
+	skill = 3
+	
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Archibald Wavell"
+	picture = "Portrait_Britain_Archibald_Wavell.dds"
+	traits = { career_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "James Fownes Somerville"
+	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
+	traits = { superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Henry Harwood"
+	picture = "Portrait_Britain_Henry_Harwood.dds"
+	traits = { old_guard_navy blockade_runner }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Andrew Cunningham"
+	picture = "Portrait_Britain_Andrew_Cunningham.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Bruce Fraser"
+	picture = "Portrait_Britain_Bruce_Fraser.dds"
+	traits = { blockade_runner }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "John Tovey"
+	picture = "Portrait_Britain_John_Tovey.dds"
+	traits = { superior_tactician }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Bernard Rawlings"
+	picture = "Portrait_Britain_Bernard_Rawlings.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "John Cunningham"
+	picture = "Portrait_Britain_John_Cunningham.dds"
+	traits = {  }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Charles Forbes"
+	picture = "Portrait_Britain_Charles_Forbes.dds"
+	traits = { fly_swatter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Algernon Willis"
+	picture = "Portrait_Britain_Algernon_Willis.dds"
+	traits = { spotter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Arthur Power"
+	picture = "Portrait_Britain_Arthur_Power.dds"
+	traits = {  }
+	skill = 2
+}

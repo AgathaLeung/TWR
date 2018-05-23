@@ -115,27 +115,16 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 add_ideas = {
-	GER_mefo_bills_1
-	GER_Anglo_German_Naval_Treaty
-	sour_loser
-	general_staff
-# Laws and Policies	
 	limited_exports
 	limited_conscription
-	partial_economic_mobilisation
-# Cabinet
-	GER_HoG_Rudolf_Hess
-	GER_FM_Konstantin_von_Neurath
-	GER_AM_Werner_von_Blomberg
-	GER_MoS_Wilhelm_Frick
-	GER_HoI_Wilhelm_Canaris
-# Military Staff
-	GER_CoStaff_Ludwig_Beck
-	GER_CoArmy_Werner_von_Fritsch
-	GER_CoNavy_Erich_Raeder
-	GER_CoAir_Hermann_Goring
+	overgrown_bureucracy
+	overgrown_officer_corps
+	nazi_recruitment_system
+	economic_stagnation
 }
+
 activate_mission = GER_mefo_bills_mission
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
