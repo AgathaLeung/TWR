@@ -148,11 +148,14 @@ create_country_leader = {
 create_country_leader = {
 	name = "Philippe Pétain"
 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Vichy_PA_Philippe_Petain.tga"
+	picture = "France_PA_Philippe_Petain.dds"
 	expire = "1965.1.1"
 	ideology = fascism
-	traits = {}
+	traits = {
+		
+	}
 }
+
 # Paternal Autocracy
 create_country_leader = {
 	name = "Charles Maurras"
