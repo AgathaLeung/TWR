@@ -151,9 +151,14 @@ if = {
 		target = RUK
 		autonomous_state = autonomy_integrated_puppet
 	}
+	set_autonomy = {
+		target = RFA
+		autonomous_state = autonomy_integrated_puppet
+	}
 	else = {
 		puppet = ROS
 		puppet = RUK
+		puppet = RFA
 	}
 }
 
