@@ -1,12 +1,13 @@
 ﻿#########################################################################
-# Denmark
+# Norway
 #########################################################################
-capital = 37
-oob = "DEN_1936"
+capital = 110
 set_stability = 0.9
 set_war_support = 0.1
+oob = "NOR_1936"
 set_research_slots = 3
-set_convoys = 40
+set_convoys = 80	
+
 #######################
 # Research
 #######################
@@ -14,96 +15,92 @@ set_technology = {
 	infantry_kit_1918 = 1
 	infantry_kit_1936 = 1
 	tech_support = 1		
-	tech_recon = 1
 	tech_engineers = 1
-	gw_artillery = 1
 	fighter_1933 = 1
-	cv_fighter_1933 = 1
-	strategic_bomber0 = 1
+	early_bomber = 1
 # Armour Tech
+
 	light_tank_1917 = 1
-	light_tank_1918 = 1	
+
+	light_tank_1918 = 1
 #Naval Stuff
 	destroyer_1885 = 1
 	destroyer_1900 = 1
 	destroyer_1912 = 1
 	destroyer_1916 = 1
-	
+
 	light_cruiser_1885 = 1
 	light_cruiser_1900 = 1
 	light_cruiser_1912 = 1
-
+	
 	heavy_cruiser_1885 = 1
 	heavy_cruiser_1895 = 1
 	heavy_cruiser_1906 = 1
-
+	
 	submarine_1895 = 1
 	submarine_1912 = 1
 	submarine_1916 = 1
-
-	transport = 1
+	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1
 #
+	tech_recon = 1
 }
 #######################
 # Politics
 #######################
 set_politics = {
 	parties = {
-		national_socialist = { popularity = 19 }		
-		fascist = { popularity = 2 }		
-		paternal_autocrat = { popularity = 3 }		
-		conservative = { popularity = 21 }	
+		national_socialist = { popularity = 21 }		
+		fascist = { popularity = 0 }		
+		paternal_autocrat = { popularity = 5 }		
+		conservative = { popularity = 24 }				
 		liberal = { popularity = 23 }		
-		social_democrat = { popularity = 24 }		
-		left_wing_radical = { popularity = 3 }		
-		leninist = { popularity = 2 }		
+		social_democrat = { popularity = 28 }		
+		left_wing_radical = { popularity = 9 }		
+		leninist = { popularity = 0 }		
 		stalinist = { popularity = 0 }	
 	}
 	
 	ruling_party = national_socialist
-	last_election = "1935.10.22"
-	election_frequency = 48
+	last_election = "1933.10.16"
+	election_frequency = 36
 	elections_allowed = no
 }
 add_ideas = {
-# Cabinet
-	DEN_HoG_Thorvald_Stauning
-	DEN_FM_Peter_Munch
-	DEN_AM_Alsing_Andersen
-	DEN_MoS_Karl_Kristian_Steincke
-	DEN_HoI_Erik_Mertz
-# Military Staff
-	DEN_CoStaff_Wilhelm_W_Prior
-	DEN_CoArmy_Erik_With
-	DEN_CoNavy_Hjalmar_Rechnitzer
-	DEN_CoAir_KW_Essemann
+	limited_conscription
 }
 #######################
 # Leaders
 #######################
 # National Socialism
 create_country_leader = {
-	name = "Frits Clausen"
+	name = "Vidkun Quisling"
 	desc = ""
-	picture = ".tga"
+	picture = "Norway_NS_Vidkun_Quisling.tga"
 	expire = "1965.1.1"
 	ideology = national_socialism
 	traits = {}
 }
 # Fascism
 create_country_leader = {
-	name = "Knud Bach"
+	name = "Vidkun Quisling"
 	desc = ""
-	picture = ".tga"
+	picture = "Norway_NS_Vidkun_Quisling.tga"
 	expire = "1965.1.1"
 	ideology = fascism
 	traits = {}
 }
 # Paternal Autocracy
 create_country_leader = {
-	name = "Christian X"
+	name = "Haakon VII"
 	desc = ""
-	picture = "Denmark_PA_Christian_X.tga"
+	picture = "Norway_PA_Haakon_VII.tga"
 	expire = "1965.1.1"
 	ideology = paternal_autocracy
 	traits = {}
@@ -111,48 +108,56 @@ create_country_leader = {
 
 # Conservatism
 create_country_leader = {
-	name = "John Christmas Møller"
+	name = "Jens Bratlie"
 	desc = ""
-	picture = ".tga"
+	picture = "Sweden_NS_.tga"
 	expire = "1965.1.1"
 	ideology = social_conservatism
 	traits = {}
 }
 # Liberalism 
 create_country_leader = {
-	name = "Erik Scavenius"
+	name = "Jacob S. Worm-Müller"
 	desc = ""
-	picture = ".tga"
+	picture = "Sweden_NS_.tga"
 	expire = "1965.1.1"
 	ideology = social_conservatism
 	traits = {}
 }
 # Social Democracy
 create_country_leader = {
-	name = "Thorvald Stauning"
+	name = "Johan Nygaardsvold"
 	desc = ""
-	picture = "Denmark_SD_Thorvald_Stauning.tga"
+	picture = "Norway_SD_Johan_Nygaardsvold.tga"
 	expire = "1965.1.1"
 	ideology = social_democracy
 	traits = {}
 }
 
 # Left-Wing Radicalism
-# Bolshevik-Leninism
 create_country_leader = {
-	name = "Marie-Sophie Nielsen"
+	name = "Olav Scheflo"
 	desc = ""
-	picture = ".tga"
+	picture = "Sweden_NS_.tga"
 	expire = "1965.1.1"
-	ideology = leninism
+	ideology = left_wing_radicalism
 	traits = {}
 }
+# Bolshevik-Leninism
 # Marxism-Leninism
 create_country_leader = {
-	name = "Aksel Larsen"
+	name = "Emil Løvlien"
 	desc = ""
-	picture = ".tga"
+	picture = "Sweden_NS_.tga"
 	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+create_country_leader = {
+	name = "Adam Egede-Nissen"
+	desc = ""
+	picture = "Sweden_NS_.tga"
+	expire = "1946.1.1"
 	ideology = stalinism
 	traits = {}
 }
@@ -160,12 +165,21 @@ create_country_leader = {
 # Generals
 #######################
 create_corps_commander = {
-	name = "Wilhelm Wain Prior"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
+	name = "Carl Gustav Fleischer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+	traits = {  trickster winter_specialist }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "Elias Corneliussen"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
+	traits = { spotter }
 	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
 }
