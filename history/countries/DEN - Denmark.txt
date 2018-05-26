@@ -1,0 +1,171 @@
+﻿#########################################################################
+# Denmark
+#########################################################################
+capital = 37
+oob = "DEN_1936"
+set_stability = 0.9
+set_war_support = 0.1
+set_research_slots = 3
+set_convoys = 40
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	fighter_1933 = 1
+	cv_fighter_1933 = 1
+	strategic_bomber0 = 1
+# Armour Tech
+	light_tank_1917 = 1
+	light_tank_1918 = 1	
+#Naval Stuff
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+
+	transport = 1
+#
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 0 }		
+		paternal_autocrat = { popularity = 1 }		
+		conservative = { popularity = 36 }	
+		liberal = { popularity = 12 }		
+		social_democrat = { popularity = 46 }		
+		left_wing_radical = { popularity = 3 }		
+		leninist = { popularity = 2 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = social_democrat
+	last_election = "1935.10.22"
+	election_frequency = 48
+	elections_allowed = yes
+}
+add_ideas = {
+# Cabinet
+	DEN_HoG_Thorvald_Stauning
+	DEN_FM_Peter_Munch
+	DEN_AM_Alsing_Andersen
+	DEN_MoS_Karl_Kristian_Steincke
+	DEN_HoI_Erik_Mertz
+# Military Staff
+	DEN_CoStaff_Wilhelm_W_Prior
+	DEN_CoArmy_Erik_With
+	DEN_CoNavy_Hjalmar_Rechnitzer
+	DEN_CoAir_KW_Essemann
+}
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "Frits Clausen"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Knud Bach"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Christian X"
+	desc = ""
+	picture = "Denmark_PA_Christian_X.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+
+# Conservatism
+create_country_leader = {
+	name = "John Christmas Møller"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism 
+create_country_leader = {
+	name = "Erik Scavenius"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Thorvald Stauning"
+	desc = ""
+	picture = "Denmark_SD_Thorvald_Stauning.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+
+# Left-Wing Radicalism
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Marie-Sophie Nielsen"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Aksel Larsen"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_corps_commander = {
+	name = "Wilhelm Wain Prior"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

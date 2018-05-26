@@ -1,0 +1,19 @@
+state={
+	id=770
+	name="STATE_770"
+	provinces={
+		6672
+	}
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 6
+
+		}
+		add_core_of = YUG
+	}
+
+	manpower=205120
+	buildings_max_level_factor=1.000
+	state_category = rural
+}

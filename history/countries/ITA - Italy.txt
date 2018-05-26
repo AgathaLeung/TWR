@@ -1,0 +1,352 @@
+﻿#########################################################################
+# Afghanistan
+#########################################################################
+capital = 2
+set_stability = 0.6
+set_war_support = 0.7
+oob = "ITA_1936"
+set_research_slots = 5
+set_convoys = 200
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	
+	fighter_1933 = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS_1936 = 1
+	strategic_bomber0 = 1
+# Armour Tech
+	light_tank_1917 = 1
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+	light_tank_1934 = 1
+# Naval stuff
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	destroyer_1922 = 1
+	destroyer_1933 = 1	
+	
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+	light_cruiser_1922 = 1
+	light_cruiser_1933 = 1	
+	light_cruiser_1936 = 1
+	
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+	heavy_cruiser_1922 = 1
+	heavy_cruiser_1933 = 1	
+	heavy_cruiser_1936 = 1	
+	
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+	submarine_1922 = 1	
+	submarine_1933 = 1
+
+	battlecruiser_1906 = 1
+	battlecruiser_1912 = 1
+	battlecruiser_1916 = 1
+	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1	
+	battleship_1933 = 1
+
+	escort_carrier_1912 = 1
+	
+	transport = 1
+#
+	trench_warfare = 1
+	fleet_in_being = 1
+}
+
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 52 }		
+		paternal_autocrat = { popularity = 0 }		
+		conservative = { popularity = 28 }		
+		liberal = { popularity = 10 }		
+		social_democrat = { popularity = 0 }		
+		left_wing_radical = { popularity = 10 }		
+		leninist = { popularity = 0 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = fascist
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+add_ideas = {
+	victor_emmanuel
+	vittoria_mutilata
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+# Cabinet
+	ITA_FM_Gian_Galeazzo_Ciano
+	ITA_AM_Guido_Jung
+	ITA_MoS_Guido_BuffariniGuidi
+	ITA_HoI_Cesare_Ame
+# Military Staff
+	ITA_CoStaff_Francesco_Grazioli
+	ITA_CoArmy_Alberto_Pariani
+	ITA_CoNavy_Domenico_Cavagnari
+	ITA_CoAir_Giuseppe_Valle	
+}
+#######################
+# Diplomacy
+#######################
+
+create_faction = "Mediterranean Pact"
+add_to_faction = ITA
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = GRE
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = GRE
+	}
+}
+
+give_guarantee = ALB
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "Roberto Farancci"
+	desc = ""
+	picture = "Italy_NS_Roberto_Farinacci.tga"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Benito Mussolini"
+	desc = ""
+	picture = "Italy_FA_Benito_Mussolini.tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Vittorio Emanuele III"
+	desc = ""
+	picture = "Italy_PA_Emanuele_III.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+# Conservatism
+create_country_leader = {
+	name = "Alcide de Gasperi"
+	desc = ""
+	picture = "Italy_C_Alcide_de_Gasperi.tga"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism
+create_country_leader = {
+	name = "Ivanoe Bonomi"
+	desc = ""
+	picture = "Italy_L_Ivanoe_Bonomi.tga"
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Giuseppe Saragat"
+	desc = ""
+	picture = "Italy_SD_Giuseppe_Saragat.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "Luigi Longo"
+	desc = ""
+	picture = "Italy_LWR_Luigi_Longo.tga"
+	expire = "1965.1.1"
+	ideology = left_wing_radicalism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Amadeo Bordiga"
+	desc = ""
+	picture = "Italy_BL_Amadeo_Bordiga.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Palmiro Togliatti"
+	desc = ""
+	picture = "Italy_ML_Palmiro_Togliatti.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_field_marshal = {
+	name = "Pietro Badoglio"
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	traits = { defensive_doctrine old_guard politically_connected inflexible_strategist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Emilio De Bono"
+	picture = "portrait_italy_emilio_de_bono.dds"
+	traits = { defensive_doctrine old_guard politically_connected trait_cautious }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ugo Cavallero"
+	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+	traits = {  old_guard trait_cautious career_officer }
+	skill = 2
+	rank = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Giovanni Messe"
+	picture = "Portrait_Italy_Giovanni_Messe.dds"
+	traits = {  armor_officer war_hero }
+	skill = 4
+	rank = 1
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Sebastiano Visconti Prasca"
+	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+	traits = { career_officer inflexible_strategist }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Ubaldo Soddu"
+	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
+	traits = { career_officer trait_cautious }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Italo Balbo"
+	picture = "portrait_italy_italo_balbo.dds"
+	traits = { career_officer politically_connected }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Rodolfo Graziani"
+	picture = "portrait_italy_radolfo_graziani.dds"
+	traits = { offensive_doctrine politically_connected trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "Inigo Campioni"
+	picture = "Portrait_Italy_Inigo_Campioni.dds"
+	traits = { superior_tactician spotter }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Alberto Da Zara"
+	picture = "Portrait_Italy_Alberto_Da_Zara.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Giuseppe Fioravanzo"
+	picture = "Portrait_Italy_Giuseppe_Fioravanzo.dds"
+	traits = { superior_tactician }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Carlo Bergamini"
+	picture = "Portrait_Italy_Carlo_Bergamini.dds"
+	traits = { superior_tactician }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Angelo Iachino"
+	picture = "Portrait_Italy_Angelo_Iachino.dds"
+	traits = { superior_tactician spotter }
+	skill = 2
+}

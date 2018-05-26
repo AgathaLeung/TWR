@@ -138,6 +138,38 @@ create_import = {
 		factories = 1
 		exporter = SWE
 }
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = ROS
+		autonomous_state = autonomy_integrated_puppet
+	}
+	set_autonomy = {
+		target = RUK
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = ROS
+		puppet = RUK
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = SLO
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = SLO
+	}
+}
+
 #######################
 # Leaders
 #######################

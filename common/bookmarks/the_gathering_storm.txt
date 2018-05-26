@@ -47,9 +47,9 @@ bookmarks = {
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = national_socialist
 			ideas = {
-				sour_loser
-				general_staff
-				GER_mefo_bills_1		
+				overgrown_officer_corps
+				economic_stagnation
+				nazi_recruitment_system
 			}
 			focuses = {
 
@@ -66,17 +66,17 @@ bookmarks = {
 
 			}		
 		}
-		"JAP"={
-			history = "JAP_GATHERING_STORM_DESC"
-			ideology = fascist
-			ideas = {
+		"CHI"={
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			#ideas = {
 				state_shintoism
-				JAP_zaibatsus
-				JAP_militarism
 			}	
-			focuses = {
-
-			}
+			#focuses = {
+				southern_expansion_focus
+				divine_wind_focus
+				found_own_faction_focus
+			}			
 		}
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
