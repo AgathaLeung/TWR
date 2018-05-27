@@ -96,12 +96,12 @@ set_politics = {
 		conservative = { popularity = 15 }
 		liberal = { popularity = 3 }		
 		social_democrat = { popularity = 2 }		
-		left_wing_radical = { popularity = 8 }		
-		leninist = { popularity = 10 }		
-		stalinist = { popularity = 60 }	
+		socialist = { popularity = 8 }		
+		bolshevik_leninist = { popularity = 10 }		
+		marxist_leninist = { popularity = 60 }	
 	}
 	
-	ruling_party = stalinist
+	ruling_party = marxist_leninist
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -156,7 +156,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Russia_PA_Kirill_Vladimirovich.tga"
 	expire = "1938.1.1"
-	ideology = paternal_autocracy
+	ideology = authoritarian_democracy
 	traits = {}
 }
 
@@ -194,7 +194,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Soviet_LWR_Nikolai_Bukharin.tga"
 	expire = "1965.1.1"
-	ideology = left_wing_radicalism
+	ideology = socialism
 	traits = {}
 }
 # Bolshevik-Leninism
@@ -211,7 +211,7 @@ create_country_leader = {
 	name = "Lavrentiy Beria"
 	desc = ""
 	picture = "Soviet_Beria.tga"
-	expire = "1965.1.1"
+	expire = "1975.1.1"
 	ideology = stalinism
 	traits = {}
 }
