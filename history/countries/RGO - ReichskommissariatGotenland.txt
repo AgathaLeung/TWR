@@ -1,0 +1,52 @@
+﻿capital = 12
+
+set_research_slots = 1
+
+
+set_technology = {
+	infantry_kit_1918 = 2
+	infantry_kit_1936 = 2
+	tech_mountaineers = 2
+	tech_support = 1
+	tech_recon = 1
+	transport = 1
+}
+
+add_political_power = 0
+set_convoys = 50
+
+set_politics = {
+
+	parties = {		
+		national_socialist = { popularity = 100 }
+		fascist = { popularity = 0 }
+		paternal_autocrat = { popularity = 0 }
+		conservative = { popularity = 0 }
+
+		liberal = { popularity = 0 }
+		social_democrat = { popularity = 0 }
+		left_wing_radical = { popularity = 0 }
+		leninist = { popularity = 0 }
+		stalinist = { popularity = 0 }				
+	}
+	
+	ruling_party = national_socialist
+	last_election = "1935.6.9"
+	election_frequency = 0
+	elections_allowed = no
+}
+
+	add_ideas = {
+		volunteer_only
+		export_focus
+		war_economy
+		GER_RK_repression
+	}
+	
+create_country_leader = {
+	name = "PLACEHOLDER" 
+	desc = "POLITICS_HINRICH_LOHSE_DESC" 
+	picture = "" 
+	expire = "1964.2.26" 
+	ideology = national_socialism traits = { }
+}			
