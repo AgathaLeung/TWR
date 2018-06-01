@@ -1,0 +1,29 @@
+
+state={
+	id=790
+	name="STATE_790"
+
+	history={
+		owner = ENG
+		victory_points = {
+			8193 2
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		air_base = 1
+		12975 = {
+				naval_base = 1
+			}     
+        }
+
+		}
+
+
+	provinces={
+		3109 6008 8193 12975 
+	}
+	manpower=698753
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

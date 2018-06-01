@@ -1,0 +1,24 @@
+
+state={
+	id=556
+	name="STATE_556"
+	resources={
+		rubber=2.000
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		5013 5070 8065 8122 10762 10803 
+	}
+	manpower=3850700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

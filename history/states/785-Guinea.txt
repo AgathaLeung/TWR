@@ -1,0 +1,24 @@
+
+state={
+	id=785
+	name="STATE_785"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			1909 = {
+				naval_base = 1
+			}
+
+		}
+
+	}
+
+	provinces={
+		1909 4957 5039 8008 12802 12858 
+	}
+	manpower=2226708
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

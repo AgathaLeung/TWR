@@ -122,6 +122,7 @@ add_ideas = {
 
 create_faction = "Mediterranean Pact"
 add_to_faction = ITA
+add_to_faction = CRO
 
 if = {
 	limit = {
