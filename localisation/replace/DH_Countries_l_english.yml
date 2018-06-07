@@ -4111,6 +4111,37 @@
  SSB_marxist_leninist_ADJ:0 "German"
  SSB_bolshevik_leninist_ADJ:0 "German"
  SSB_socialist_ADJ:0 "German"
+
+ RUS_national_socialist:0 "Russian State"
+ RUS_national_socialist_DEF:0 "The Russian State"
+ RUS_fascist:0 "Russian State"
+ RUS_fascist_DEF:0 "The Russian State"
+ RUS_paternal_autocrat:0 "Russia"
+ RUS_paternal_autocrat_DEF:0 "The Russian State" 
+ 
+ RUS_conservative:0 "Russian Federation"
+ RUS_conservative_DEF:0 "The Russian Federation"
+ RUS_liberal:0 "Russian Federation"
+ RUS_liberal_DEF:0 "The Russian Federation"
+ RUS_social_democrat:0 "Russian Federation"
+ RUS_social_democrat_DEF:0 "The Russian Federation" 
+ 
+ RUS_marxist_leninist:0 "Soviet Russia"
+ RUS_marxist_leninist_DEF:0 "The Russian Soviet Republic"
+ RUS_bolshevik_leninist:0 "Soviet Russia"
+ RUS_bolshevik_leninist_DEF:0 "The Russian Soviet Republic"
+ RUS_socialist:0 "Soviet Russia"
+ RUS_socialist_DEF:0 "The Russian Soviet Republic"
+ 
+ RUS_national_socialist_ADJ:0 "Russian"
+ RUS_fascist_ADJ:0 "Russian"
+ RUS_paternal_autocrat_ADJ:0 "Russian"
+ RUS_conservative_ADJ:0 "Russian"
+ RUS_liberal_ADJ:0 "Russian"
+ RUS_social_democrat_ADJ:0 "Russian"
+ RUS_marxist_leninist_ADJ:0 "Soviet"
+ RUS_bolshevik_leninist_ADJ:0 "Soviet"
+ RUS_socialist_ADJ:0 "Soviet"
  
  #template
  101_national_socialist:0 "202"
