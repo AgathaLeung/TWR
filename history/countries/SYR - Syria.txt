@@ -62,8 +62,8 @@ set_convoys = 5
 set_politics = {
 
 	parties = {
-		national_socialist = { popularity = 0 }		
-		fascist = { popularity = 30 }		
+		national_socialist = { popularity = 30 }		
+		fascist = { popularity = 0 }		
 		paternal_autocrat = { popularity = 25 }		
 		conservative = { popularity = 26 }		
 		liberal = { popularity = 10 }		
@@ -73,7 +73,7 @@ set_politics = {
 		stalinist = { popularity = 0 }	
 	}
 	
-	ruling_party = fascist
+	ruling_party = national_socialist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -93,7 +93,7 @@ create_country_leader = {
 	name = "Antun Saadeh"
 	desc = ""
 	picture = "gfx/leaders/SYR/Portrait_Arabia_Generic_land_3.dds"
-	ideology = fascism
+	ideology = national_socialism
 	traits = {
 		#
 	}

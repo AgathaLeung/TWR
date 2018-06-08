@@ -1,0 +1,320 @@
+﻿capital = 176
+
+oob = "SPA_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+	fighter_1933 = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+# Armour Tech
+
+	light_tank_1917 = 1
+
+	light_tank_1918 = 1
+	light_tank_1926 = 1	
+#Naval Stuff
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	destroyer_1922 = 1
+	destroyer_1933 = 1	
+	
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+	light_cruiser_1922 = 1
+	
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+	heavy_cruiser_1922 = 1
+	heavy_cruiser_1933 = 1
+	
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+	submarine_1922 = 1
+	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1	
+	battleship_1933 = 1
+		
+	transport = 1
+}
+
+set_politics = {
+
+	parties = {
+		national_socialist = { popularity = 0 }
+		fascist = { popularity = 25 }
+		paternal_autocrat = { popularity = 20 }
+		conservative = { popularity = 40 }
+		liberal = { popularity = 15 }
+		social_democrat = { popularity = 0 }
+		left_wing_radical = { popularity = 0 }
+		leninist = { popularity = 0 }
+		stalinist = { popularity = 0 }
+	}
+	
+	ruling_party = conservative
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+1939.1.1 = {
+
+	add_political_power = 1198
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	oob = "SPA_1939"
+	load_oob = "unlock_tanks"
+	set_technology = {
+		fighter_1936 = 1
+		CAS_1936 = 1
+		tactical_bomber1 = 1
+		
+		
+		interwar_artillery = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		motorised_infantry = 1
+		support_weapons = 1
+		support_weapons2 = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		improved_oil_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+
+	set_politics = {
+
+		parties = {
+			conservative = { 
+				popularity = 22
+			}
+
+			fascist = {
+				popularity = 76
+			}
+			
+			stalinist = {
+				popularity = 2
+			}
+		}
+		
+		ruling_party = fascist
+		last_election = "1934.3.26"
+		election_frequency = 60
+		elections_allowed = no
+	}
+
+	set_global_flag = scw_over
+	add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1095 }
+}
+
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = MOR
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = MOR
+	}
+}
+
+
+
+####################################################
+# Spanish Leaders
+####################################################
+# National Socialism
+create_country_leader = {
+	name = "Ramiro Ledesma Ramos"
+	desc = ""
+	picture = "Spain_NS_Ramiro_Ramos.dds"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "José Antonio Primo de Rivera"
+	desc = ""
+	picture = "Spain_FA_Jose_Antonio_Primo_de_Rivera.dds"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "José Sanjurjo"
+	desc = ""
+	picture = "Spain_PA_Jose_Sanjurjo.dds"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+# Conservatism
+create_country_leader = {
+	name = "Niceto Alcalá-Zamora"
+	desc = ""
+	picture = "Spain_SC_Niceto_Alcala_Zamora.dds"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism
+create_country_leader = {
+	name = "Manuel Portela Valladares"
+	desc = ""
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Manuel Azaña"
+	desc = ""
+	picture = "Spain_SD_Manuel_Azana.dds"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "Francisco Largo Caballero"
+	desc = ""
+	picture = "Spain_LWR_Francisco_Largo_Caballero.dds"
+	expire = "1965.1.1"
+	ideology = left_wing_radicalism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Andrés Nin"
+	desc = ""
+	picture = "Spain_LE_Andres_Nin.dds"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Jose Díaz Ramos"
+	desc = ""
+	picture = "Spain_ST_Jose_Diaz.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+####################################################
+# Spanish General Staff
+####################################################
+create_field_marshal = {
+	name = "Franco Bahamonde"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Mola Vidal"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	skill = 4
+}
+
+create_field_marshal = {
+	name = "Sanjurjo Sacanell"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { logistics_wizard old_guard }
+	skill = 2
+}
+
+create_field_marshal = {
+	name = "Cabanellas Ferrer"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { defensive_doctrine old_guard }
+	skill = 1
+}
+
+create_corps_commander = {
+	name = "Orgaz Yoldi"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Millán Astray Terreros"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trickster commando old_guard }
+	skill = 2
+}
+
+create_corps_commander = {
+	name = "Moscardó Ituarte"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = {}
+	skill = 2
+}
+
