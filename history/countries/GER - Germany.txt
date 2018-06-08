@@ -145,32 +145,27 @@ if = {
 	}
 	set_autonomy = {
 		target = ROS
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = RUK
-		autonomous_state = autonomy_integrated_puppet
-	}
-	set_autonomy = {
-		target = RFA
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = RKA
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = RMO
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	set_autonomy = {
 		target = RGO
-		autonomous_state = autonomy_integrated_puppet
+		autonomous_state = autonomy_reichskommissariat
 	}
 	else = {
 		puppet = ROS
 		puppet = RUK
-		puppet = RFA
 		puppet = RKA
 		puppet = RMO
 		puppet = RGO

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = RFA
+		owner = GER
 		victory_points = {
 			11516 5 
 		}
