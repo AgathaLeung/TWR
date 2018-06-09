@@ -150,11 +150,17 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.35
 	}
+	set_autonomy = {
+		target = HOL
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
 	else = {
 		puppet = RAJ
 		puppet = MAL
 		puppet = BEL
 		puppet = FFR
+		puppet = HOL
 	}
 }
 if = {
