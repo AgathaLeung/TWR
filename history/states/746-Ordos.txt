@@ -7,8 +7,7 @@ state={
 	state_category = pastoral
 	
 	
-	history=
-	{
+	history={
 		owner = CHI
 		add_core_of = SHX
 		add_core_of = CHI
@@ -16,10 +15,6 @@ state={
 		
 		buildings = {
 			infrastructure = 2
-		}
-
-		1938.10.25 = {
-			controller = JAP
 		}
 	}
 	manpower=500000
