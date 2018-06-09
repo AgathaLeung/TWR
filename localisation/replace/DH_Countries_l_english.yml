@@ -4173,6 +4173,37 @@
  RUS_marxist_leninist_ADJ:0 "Soviet"
  RUS_bolshevik_leninist_ADJ:0 "Soviet"
  RUS_socialist_ADJ:0 "Soviet"
+
+ FFR_national_socialist:0 "French State"
+ FFR_national_socialist_DEF:0 "The French State"
+ FFR_fascist:0 "French State"
+ FFR_fascist_DEF:0 "The French State"
+ FFR_paternal_autocrat:0 "Free France"
+ FFR_paternal_autocrat_DEF:0 "The French Government in Exile" 
+ 
+ FFR_conservative:0 "French Republic"
+ FFR_conservative_DEF:0 "The French Republic"
+ FFR_liberal:0 "French Republic"
+ FFR_liberal_DEF:0 "The French Republic"
+ FFR_social_democrat:0 "French Republic"
+ FFR_social_democrat_DEF:0 "The French Republic" 
+ 
+ FFR_marxist_leninist:0 "French Commune"
+ FFR_marxist_leninist_DEF:0 "The French Commune"
+ FFR_bolshevik_leninist:0 "French Commune"
+ FFR_bolshevik_leninist_DEF:0 "The French Commune"
+ FFR_socialist:0 "French Commune"
+ FFR_socialist_DEF:0 "The French Commune"
+ 
+ FFR_national_socialist_ADJ:0 "French"
+ FFR_fascist_ADJ:0 "French"
+ FFR_paternal_autocrat_ADJ:0 "French"
+ FFR_conservative_ADJ:0 "French"
+ FFR_liberal_ADJ:0 "French"
+ FFR_social_democrat_ADJ:0 "French"
+ FFR_marxist_leninist_ADJ:0 "French"
+ FFR_bolshevik_leninist_ADJ:0 "French"
+ FFR_socialist_ADJ:0 "French"
  
  #template
  101_national_socialist:0 "202"

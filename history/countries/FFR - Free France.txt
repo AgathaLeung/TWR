@@ -1,0 +1,63 @@
+﻿#########################################################################
+# Belgium
+#########################################################################
+capital = 539
+set_research_slots = 3
+set_stability = 0.75
+set_convoys = 80
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	fighter_1933 = 1
+	trench_warfare = 1
+# Armour Tech
+	light_tank_1917 = 1
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+#Naval stuff
+	destroyer_1885 = 1
+#
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 5 }		
+		paternal_autocrat = { popularity = 60 }		
+		conservative = { popularity = 14 }				
+		liberal = { popularity = 9 }		
+		social_democrat = { popularity = 11 }		
+		left_wing_radical = { popularity = 1 }		
+		leninist = { popularity = 0 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = paternal_autocrat
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#######################
+# Leaders
+#######################
+
+# Paternal Autocracy
+create_country_leader = {
+	name = "Charles de Gaulle"
+	desc = ""
+	picture = ""
+	expire = "1965.1.1"
+	ideology = authoritarian_democracy
+	traits = {}
+}
+

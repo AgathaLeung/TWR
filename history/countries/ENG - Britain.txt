@@ -142,13 +142,19 @@ if = {
 	}
 	set_autonomy = {
 		target = BEL
-		autonomous_state = autonomy_satellite
+		autonomous_state = autonomy_dominion
+		freedom_level = 0.35
+	}
+	set_autonomy = {
+		target = FFR
+		autonomous_state = autonomy_dominion
 		freedom_level = 0.35
 	}
 	else = {
 		puppet = RAJ
 		puppet = MAL
 		puppet = BEL
+		puppet = FFR
 	}
 }
 if = {
