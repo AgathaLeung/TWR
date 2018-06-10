@@ -218,7 +218,7 @@ create_country_leader = {
 # Social Democracy
 create_country_leader = {
 	name = "Clement Attlee"
-	desc = ""
+	desc = "POLITICS_ATTLEE_DESC"
 	picture = "Britain_SD_Clement_Attlee.tga"
 	expire = "1938.1.1"
 	ideology = social_democracy

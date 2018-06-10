@@ -194,7 +194,7 @@ if = {
 # National Socialism
 create_country_leader = {
 	name = "Adolf Hitler"
-	desc = ""
+	desc = "POLITICS_HITLER_DESC"
 	picture = "Germany_NS_Adolf_Hitler_OLD.tga"
 	expire = "1965.1.1"
 	ideology = national_socialism
