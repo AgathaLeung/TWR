@@ -343,9 +343,8 @@ SLO = {
 	color_ui = rgb { 255 255 255 }
 }
 RAJ = {
-	color = rgb { 180 56 93 }
-	#color = rgb { 170  10  10 }
-	color_ui = rgb { 200  10  10 }
+	color = rgb { 10  170  10 }
+	color_ui = rgb { 10  200  10 }
 }
 
 CRO = {
@@ -509,9 +508,8 @@ BOT = {
 	color_ui = rgb { 11 132 112 }
 }
 PAK = {
-	color = rgb { 51 155 0 }
-	#color = rgb { 21 38 66 }
-	color_ui = rgb { 21 38 66 }
+	color = rgb { 140 160 140 }
+	color_ui = rgb { 140 160 140 }
 }
 
 ####-------------------------------------- TWR  ----------------------------------------------------
@@ -529,6 +527,46 @@ MOR = {
 FFR = {
 	color = rgb { 21 85 220 }
 	color_ui = rgb { 74 147 255 }
+}
+
+BEN = {
+	color = rgb { 87 126 236 }
+	color_ui = rgb { 87 126 255 }
+}
+
+SKM = {
+	color = rgb { 247  240  171 }
+	color_ui = rgb { 247  240  171 }
+}
+
+ASS = {
+	color = rgb { 171  5  5 }
+	color_ui = rgb { 171  50  50 }
+}
+
+BUR = {
+	color = rgb { 149 45 102 }
+	color_ui = rgb { 194 59 133 }
+}
+
+HYD = {
+	color = rgb { 131 247 211 }
+	color_ui = rgb { 140 247 211 }
+}
+
+TAM = {
+	color = rgb { 166 247 131 }
+	color_ui = rgb { 188 235 21 }
+}
+
+MAR = {
+	color = rgb { 247 216 131 }
+	color_ui = rgb { 255 187 0 }
+}
+
+KSH = {
+	color = rgb { 149 0 189 }
+	color_ui = rgb { 150 20 190 }
 }
 
 ####-------------------------------------- DH Colors ----------------------------------------------------

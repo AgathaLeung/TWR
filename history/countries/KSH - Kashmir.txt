@@ -1,0 +1,41 @@
+﻿#########################################################################
+# Kashmir
+#########################################################################
+capital = 441
+oob = "KSH_1952"
+
+set_research_slots = 2
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+}
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 30 }		
+		paternal_autocrat = { popularity = 70 }		
+		conservative = { popularity = 0 }
+		liberal = { popularity = 0 }		
+		social_democrat = { popularity = 0 }		
+		socialist = { popularity = 0 }		
+		bolshevik_leninist = { popularity = 0 }		
+		marxist_leninist = { popularity = 0 }	
+	}
+	
+	ruling_party = paternal_autocrat
+	last_election = "1951.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Hari Singh"
+	desc = "POLITICS_SINGH_DESC"
+	picture = "gfx/leaders/RAJ/Hari_Singh.dds"
+	expire = "1975.1.1"
+	ideology = monarchism
+	traits = {
+		#
+	}
+}

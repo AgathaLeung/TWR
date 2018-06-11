@@ -1,0 +1,14 @@
+### German Sphere
+RGO = "countries/ReichskommissariatGotenland"
+RUS = "countries/Russia.txt"
+MOR = "countries/Morocco.txt"
+FFR = "countries/Free France.txt"
+### India
+ASS = "countries/Assam.txt"
+BUR = "countries/Burma.txt"
+HYD = "countries/Hyderabad.txt"
+TAM = "countries/Tamil.txt"
+MAR = "countries/Marathi.txt"
+SKM = "countries/Sikkim.txt"
+BEN = "countries/Bengal.txt"
+KSH = "countries/Kashmir.txt"

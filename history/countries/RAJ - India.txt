@@ -1,0 +1,63 @@
+capital = 439
+
+#oob = "RAJ_1936"
+
+set_technology = {
+	infantry_kit_1918 = 1
+}
+
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 2 }		
+		fascist = { popularity = 5 }		
+		paternal_autocrat = { popularity = 0 }		
+		conservative = { popularity = 35 }
+		liberal = { popularity = 41 }		
+		social_democrat = { popularity = 7 }		
+		socialist = { popularity = 5 }		
+		bolshevik_leninist = { popularity = 0 }		
+		marxist_leninist = { popularity = 5 }	
+	}
+	
+	ruling_party = liberal
+	last_election = "1949.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+create_country_leader = {
+	name = "Jawaharlal Nehru"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_India_Nehru.dds"
+	expire = "1975.1.1"
+	ideology = liberal
+	traits = {
+		
+	}
+}
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { panzer_leader }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = { hill_fighter }
+	skill = 3
+}
+
+create_corps_commander = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { desert_fox }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { }
+	skill = 3
+}
