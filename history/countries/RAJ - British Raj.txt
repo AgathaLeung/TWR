@@ -29,7 +29,7 @@ create_country_leader = {
 	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
 	picture = "gfx/leaders/RAJ/Portrait_India_Nehru.dds"
 	expire = "1975.1.1"
-	ideology = liberal
+	ideology = social_liberalism
 	traits = {
 		
 	}
