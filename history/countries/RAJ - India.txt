@@ -34,31 +34,3 @@ create_country_leader = {
 		
 	}
 }
-
-create_corps_commander = {
-	name = "Noel Beresford-Peirse"
-	gfx = "GFX_RAJ_noel_beresford_peirse"
-	traits = { panzer_leader }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Frank Messervy"
-	gfx = "GFX_RAJ_frank_messervy"
-	traits = { hill_fighter }
-	skill = 3
-}
-
-create_corps_commander = {
-	name = "Douglas Gracey"
-	gfx = "GFX_RAJ_douglas_gracey"
-	traits = { desert_fox }
-	skill = 3
-}
-
-create_navy_leader = {
-	name = "Herbert Fitzherbert"
-	gfx = "GFX_RAJ_herbert_fitzherbert"
-	traits = { }
-	skill = 3
-}

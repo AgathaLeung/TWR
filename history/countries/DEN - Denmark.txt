@@ -105,7 +105,7 @@ create_country_leader = {
 	desc = ""
 	picture = "Denmark_PA_Christian_X.tga"
 	expire = "1965.1.1"
-	ideology = paternal_autocracy
+	ideology = authoritarian_democracy
 	traits = {}
 }
 

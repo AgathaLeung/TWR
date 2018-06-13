@@ -247,3 +247,7 @@
  TRK_marxist_leninist_ADJ:0 "Turkestani"
  TRK_bolshevik_leninist_ADJ:0 "Turkestani"
  TRK_socialist_ADJ:0 "Turkestani"
+
+ TRV_paternal_autocrat:0 "Transvolga"
+ TRV_paternal_autocrat_DEF:0 "Transvolga"
+ TRV_paternal_autocrat_ADJ:0 "Transvolgan"

@@ -1,6 +1,5 @@
 ### German Sphere
 RGO = "countries/ReichskommissariatGotenland"
-RUS = "countries/Russia.txt"
 MOR = "countries/Morocco.txt"
 FFR = "countries/Free France.txt"
 ### India
@@ -12,4 +11,7 @@ MAR = "countries/Marathi.txt"
 SKM = "countries/Sikkim.txt"
 BEN = "countries/Bengal.txt"
 KSH = "countries/Kashmir.txt"
+### Former USSR
 TRK = "countries/Turkestan.txt"
+RUS = "countries/Russia.txt"
+TRV = "countries/Transvolga.txt"
