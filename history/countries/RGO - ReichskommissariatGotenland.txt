@@ -44,8 +44,8 @@ set_politics = {
 	}
 	
 create_country_leader = {
-	name = "PLACEHOLDER" 
-	desc = "POLITICS_HINRICH_LOHSE_DESC" 
+	name = "Reinhard Heydrich" 
+	desc = "" 
 	picture = "" 
 	expire = "1964.2.26" 
 	ideology = national_socialism traits = { }
