@@ -1,0 +1,645 @@
+﻿#########################################################################
+# Japan
+#########################################################################
+capital = 282
+set_stability = 0.65
+set_war_support = 0.8
+oob = "JAP_1936"
+set_research_slots = 5
+set_convoys = 400
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	marines  = 1
+	gw_artillery = 1
+	
+	cv_fighter_1933 = 1
+	cv_CAS_1936 = 1
+	Torpedo_bomber_1936 = 1
+	fighter_1933 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS_1936 = 1
+	strategic_bomber0 = 1
+
+	# Armour Tech
+
+	light_tank_1917 = 1
+
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+	light_tank_1934 = 1
+
+	# Air Tech	
+	cv_CAS_1933 = 1
+	
+	#Naval Stuff
+	destroyer_1885 = 1
+	destroyer_1900 = 1
+	destroyer_1912 = 1
+	destroyer_1916 = 1
+	destroyer_1922 = 1
+	destroyer_1933 = 1	
+	
+	light_cruiser_1885 = 1
+	light_cruiser_1900 = 1
+	light_cruiser_1912 = 1
+	light_cruiser_1922 = 1
+	light_cruiser_1933 = 1	
+	light_cruiser_1936 = 1
+	
+	heavy_cruiser_1885 = 1
+	heavy_cruiser_1895 = 1
+	heavy_cruiser_1906 = 1
+	heavy_cruiser_1922 = 1
+	heavy_cruiser_1933 = 1	
+	heavy_cruiser_1936 = 1
+	
+	submarine_1895 = 1
+	submarine_1912 = 1
+	submarine_1916 = 1
+	submarine_1922 = 1	
+	submarine_1933 = 1
+	
+	heavy_submarine_1933 = 1
+	
+	battlecruiser_1906 = 1
+	battlecruiser_1912 = 1
+	battlecruiser_1916 = 1
+	battlecruiser_1933 = 1
+	
+	battleship_1885 = 1
+	battleship_1895 = 1
+	battleship_1900 = 1
+	battleship_1906 = 1
+	battleship_1912 = 1
+	battleship_1916 = 1
+	battleship_1922 = 1	
+	battleship_1933 = 1
+	
+	escort_carrier_1912 = 1
+	escort_carrier_1916 = 1
+	escort_carrier_1922 = 1
+
+	light_carrier_1930 = 1
+	
+	carrier_1922 = 1	
+	carrier_1930 = 1	
+	carrier_1933 = 1	
+	carrier_1936 = 1	
+	
+	transport = 1
+
+	trench_warfare = 1
+	base_strike = 1
+	synth_oil_experiments = 1
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 0 }		
+		paternal_autocrat = { popularity = 20 }		
+		conservative = { popularity = 55 }	
+		liberal = { popularity = 5 }		
+		social_democrat = { popularity = 15 }		
+		left_wing_radical = { popularity = 6 }		
+		leninist = { popularity = 0 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+add_ideas = {
+# Laws & Policies
+	state_shintoism
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+# National Spirits
+	JAP_zaibatsus
+	JAP_duplicate_research_efforts
+	JAP_militarism
+# Cabinet
+	JAP_HoG_Okada_Keisuke
+	JAP_FM_Hirota_Koki
+	JAP_MoS_Goto_Fumio
+	JAP_HoI_Okamura_Yasuji
+# Military Staff
+	JAP_CoStaff_Kanin_Kotohito
+	JAP_CoArmy_Kanin_Kotohito
+	JAP_CoNavy_Osumi_Mineo
+	JAP_CoAir_Yamamoto_Isoroku	
+}
+#######################
+# Diplomacy
+#######################
+create_faction = "Greater East Asia Co-Prosperity Sphere"
+add_to_faction = JAP
+add_to_faction = MAN
+add_to_faction = MEN
+create_import = {
+		resource = oil
+		factories = 2
+		exporter = USA
+}
+
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "Fumimaro Konoe"
+	desc = ""
+	picture = "Japan_NS_Fumimaro_Konoe.tga"
+	expire = "1965.1.1"
+	ideology = national_socialism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Tojo Hideki"
+	desc = ""
+	picture = "Japan_FA_Tojo_Hideki.tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Hirohito"
+	desc = ""
+	picture = "Japan_PA_Hirohito.tga"
+	expire = "1938.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+
+# Conservatism
+create_country_leader = {
+	name = "Yoshida Shigeru"
+	desc = ""
+	picture = "Japan_C_Yoshida_Shigeru.tga"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism
+create_country_leader = {
+	name = "Hitoshi Ashida"
+	desc = ""
+	picture = "Japan_L_Hitoshi_Ashida.tga"
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Katayama Tetsu"
+	desc = ""
+	picture = "Japan_SD_Katayama_Tetsu.tga"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "Mosaburō Suzuki"
+	desc = ""
+	picture = "Japan_LWR_Mosaburou_Suzuki.tga"
+	expire = "1965.1.1"
+	ideology = left_wing_radicalism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Miyamoto Kenji"
+	desc = ""
+	picture = "Japan_BL_Miyamoto_Kenji.tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Kyuichi Tokuda"
+	desc = ""
+	picture = "Japan_ML_Kyuichi_Tokuda.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_corps_commander = {
+	name = "Tomoyuki Yamashita"
+		picture = "Portrait_Japan_Tomoyuki_Yamashita.dds"
+	traits = {
+		trickster trait_engineer brilliant_strategist politically_connected
+	}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Hisaichi Terauchi"
+	picture = "Portrait_Japan_Hisaichi_Terauchi.dds"
+	traits = { 
+		offensive_doctrine
+		JAP_samurai_lineage   # hakushaku
+		politically_connected
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Shunroku Hata"
+		picture = "Portrait_Japan_Shunroku_Hata.dds"
+	traits = { offensive_doctrine JAP_samurai_lineage }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Akira Muto"
+		picture = "Portrait_Japan_Akira_Muto.dds"
+	traits = { career_officer  }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kanji Ishiwara"
+		picture = "Portrait_Japan_Kanji_Ishiwara.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Shizuichi Tanaka"
+		picture = "Portrait_Japan_Shizuichi_Tanaka.dds"
+	traits = { trickster career_officer infantry_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Yasuji Okamura"
+		picture = "Portrait_Japan_Yasuji_Okamura.dds"
+	traits = { trait_reckless }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Toshizo Nishio" #Toshizo
+		picture = "Portrait_Japan_Toshizo_Nishio.dds"
+	traits = { brilliant_strategist infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Rikichi Ando" #Ando
+		picture = "Portrait_Japan_Rikichi_Ando.dds"
+	traits = { career_officer }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Naruhiko Higashikuni"
+	picture = "Portrait_Japan_Naruhiko_Higashikuni.dds"
+	traits = { JAP_samurai_lineage politically_connected }
+	skill = 3 
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Seishiro Itagaki"
+		picture = "Portrait_Japan_Seishiro_Itagaki.dds"
+	traits = { JAP_samurai_lineage inflexible_strategist trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Takashi Sakai"
+		picture = "Portrait_Japan_Takashi_Sakai.dds"
+	traits = { infantry_officer trait_reckless }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Kenji Doihara"
+		picture = "Portrait_Japan_Kenji_Doihara.dds"
+	traits = { career_officer substance_abuser }
+	skill = 1 
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Kenkichi Ueda"
+		picture = "Portrait_Japan_Kenkichi_Ueda.dds"
+	traits = { old_guard cavalry_officer trait_reckless }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Shigeru Honjo"
+		picture = "Portrait_Japan_Shigeru_Honjo.dds"
+	traits = { old_guard war_hero }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Yoshijiro Umezu"
+		picture = "Portrait_Japan_Yoshijiro_Umezu.dds"
+	traits = { trait_cautious politically_connected }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Otozo Yamada"
+		picture = "Portrait_Japan_Otozo_Yamada.dds"
+	traits = { cavalry_officer career_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hatazo Adachi"
+		picture = "Portrait_Japan_Hatazo_Adachi.dds"
+	traits = { trickster JAP_samurai_lineage trait_reckless infantry_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Iwane Matsui"
+		picture = "Portrait_Japan_Iwane_Matsui.dds"
+	traits = { old_guard trait_reckless }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Sadao Araki"
+		picture = "Portrait_Japan_Sadao_Araki.dds"
+	traits = { JAP_samurai_lineage }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Keisuke Fujie"
+		picture = "Portrait_Japan_Keisuke_Fujie.dds"
+	traits = { fortress_buster career_officer politically_connected } 
+	skill = 3
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Kiichiro Higuchi"
+		picture = "Portrait_Japan_Kiichiro_Higuchi.dds"
+	traits = { career_officer trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Masaharu Homma"
+		picture = "Portrait_Japan_Masaharu_Homma.dds"
+	traits = { media_personality trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Harukichi Hyakutake"
+		picture = "Portrait_Japan_Harukichi_Hyakutake.dds"
+	traits = { infantry_officer  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Jo Iimura"
+		picture = "Portrait_Japan_Jo_Iimura.dds"
+	traits = { career_officer }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hitoshi Imamura"
+		picture = "Portrait_Japan_Hitoshi_Imamura.dds"
+	traits = {  commando career_officer infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Masatane Kanda"
+		picture = "Portrait_Japan_Masatane_Kanda.dds"
+	traits = { trait_cautious }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Kuniaki Koiso"
+		picture = "Portrait_Japan_Kuniaki_Koiso.dds"
+	traits = { JAP_samurai_lineage old_guard politically_connected }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "Isoroku Yamamoto"
+		picture = "Portrait_Japan_Isoroku_Yamamoto.dds"
+	traits = { superior_tactician spotter }
+	skill = 5
+}
+
+create_navy_leader = {
+	name = "Mineichi Koga"
+		picture = "Portrait_Japan_Mineichi_Koga.dds"
+	traits = { superior_tactician spotter }
+	skill = 4
+}
+
+create_navy_leader = {
+	name = "Kiyoshi Hasegawa"
+		picture = "Portrait_Japan_Hasegawa_Kiyoshi.dds"
+	traits = {  }
+	skill = 2
+}
+
+# Keen on planes
+create_navy_leader = {
+	name = "Shigeyoshi Inoue"
+		picture = "Portrait_Japan_Shigeyoshi_Inoue.dds"
+	traits = { air_controller }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Nobutake Kondo"
+		picture = "Portrait_Japan_Nobutake_Kondo.dds"
+	traits = { fly_swatter }
+	skill = 3
+}
+
+create_navy_leader = {
+	name = "Takeo Takagi"
+		picture = "Portrait_Japan_Takeo_Takagi.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Soemu Toyoda"
+		picture = "Portrait_Japan_Soemu_Toyoda.dds"
+	traits = { old_guard_navy }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Jisaburo Ozawa"
+		picture = "Portrait_Japan_Jisaburo_Ozawa.dds"
+	traits = { blockade_runner superior_tactician }
+	skill = 5
+	}
+
+create_navy_leader = {
+	name = "Zengo Yoshida"
+		picture = "Portrait_Japan_Zengo_Yoshida.dds"
+	traits = {  }
+	skill = 2
+}
+
+create_navy_leader = {
+	name = "Hiroaki Abe"
+		picture = "Portrait_Japan_Hiroaki_Abe.dds"
+	traits = {  }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Tadashige Daigo"
+		picture = "Portrait_Japan_Tadashige_Daigo.dds"
+	traits = { seawolf }
+	skill = 1
+}
+
+create_navy_leader = {
+	name = "Gengo Hyakutake"
+		picture = "Portrait_Japan_Gengo_Hyakutake.dds"
+	traits = {  }
+	skill = 3
+}
