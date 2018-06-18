@@ -1,0 +1,23 @@
+
+state={
+	id=576
+	name="STATE_576"
+
+	history={
+		owner = NRI
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+		add_core_of = NRI
+
+	}
+
+	provinces={
+		1697 1741 1837 4687 4743 4785 4831 4842 7707 7805 7863 10544 10631 12555 12615 12655 
+	}
+	manpower=117195
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

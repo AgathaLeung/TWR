@@ -251,3 +251,11 @@
  TRV_paternal_autocrat:0 "Transvolga"
  TRV_paternal_autocrat_DEF:0 "Transvolga"
  TRV_paternal_autocrat_ADJ:0 "Transvolgan"
+
+ NRI_paternal_autocrat:0 "Norilsk"
+ NRI_paternal_autocrat_DEF:0 "Norilsk"
+ NRI_paternal_autocrat_ADJ:0 "Norilsk"
+
+ BRY_paternal_autocrat:0 "Buryatia"
+ BRY_paternal_autocrat_DEF:0 "Buryatia"
+ BRY_paternal_autocrat_ADJ:0 "Buryatian"
