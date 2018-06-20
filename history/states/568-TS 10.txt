@@ -1,0 +1,26 @@
+
+state={
+	id=568
+	name="STATE_568"
+
+	history={
+		owner = KRA
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			4724 1 
+		}
+		add_core_of = SOV
+		add_core_of = KRA
+
+	}
+
+	provinces={
+		1777 1780 1850 4724 7701 7815 7886 10639 10712 12595 12666 
+	}
+	manpower=1726427
+	buildings_max_level_factor=1.000
+	state_category=town
+}

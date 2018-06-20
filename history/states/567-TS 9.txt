@@ -7,18 +7,18 @@ state={
 	}
 
 	history={
-		owner = TAN
+		owner = KRA
 		buildings = {
 			infrastructure = 3
 
 		}
 		add_core_of = SOV
-		add_core_of = TAN
+		add_core_of = KRA
 
 	}
 
 	provinces={
-		1803 1813 1876 4690 4750 4782 4818 4853 7713 7744 7769 7802 7841 7876 10549 10562 10570 10664 12523 12563 12621 12628 12691 10661 1810 10543 
+		1803 1813 1876 4750 4782 4818 4853 7744 7802 7841 7876 10570 12523 12563 12628 12621 12691 
 	}
 	manpower=410183
 	buildings_max_level_factor=1.000

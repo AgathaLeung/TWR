@@ -259,3 +259,15 @@
  BRY_paternal_autocrat:0 "Buryatia"
  BRY_paternal_autocrat_DEF:0 "Buryatia"
  BRY_paternal_autocrat_ADJ:0 "Buryatian"
+
+ KRA_paternal_autocrat:0 "Krasnoyarsk"
+ KRA_paternal_autocrat_DEF:0 "Krasnoyarsk"
+ KRA_paternal_autocrat_ADJ:0 "Krasnoyarsk"
+
+ NOV_paternal_autocrat:0 "Novosibirsk"
+ NOV_paternal_autocrat_DEF:0 "Novosibirsk"
+ NOV_paternal_autocrat_ADJ:0 "Novosibirsk"
+
+ IDE_paternal_autocrat:0 "Idel-Ural"
+ IDE_paternal_autocrat_DEF:0 "Idel-Ural"
+ IDE_paternal_autocrat_ADJ:0 "Idel-Ural"
