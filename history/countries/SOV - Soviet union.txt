@@ -207,7 +207,7 @@ create_country_leader = {
 # Marxism-Leninism
 create_country_leader = {
 	name = "Lavrentiy Beria"
-	desc = ""
+	desc = "POLITICS_BERIA_DESC"
 	picture = "Soviet_Beria.tga"
 	expire = "1975.1.1"
 	ideology = stalinism

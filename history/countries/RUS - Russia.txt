@@ -121,7 +121,7 @@ create_country_leader = {
 # Paternal Autocracy
 create_country_leader = {
 	name = "Sergei Wojciechowski"
-	desc = ""
+	desc = "POLITICS_SERGEI_DESC"
 	picture = "Russia_PA_Sergei_Wojciechowski.tga"
 	expire = "1968.1.1"
 	ideology = authoritarian_democracy
