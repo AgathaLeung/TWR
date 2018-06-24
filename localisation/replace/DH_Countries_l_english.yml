@@ -164,8 +164,8 @@
  FRA_national_socialist_DEF:0 "The French State"
  FRA_fascist:0 "French State"
  FRA_fascist_DEF:0 "The French State"
- FRA_paternal_autocrat:0 "Kingdom of France"
- FRA_paternal_autocrat_DEF:0 "The Kingdom of France" 
+ FRA_paternal_autocrat:0 "French State"
+ FRA_paternal_autocrat_DEF:0 "The French State" 
  
  FRA_conservative:0 "French Republic"
  FRA_conservative_DEF:0 "The French Republic"

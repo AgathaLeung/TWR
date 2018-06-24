@@ -1,0 +1,169 @@
+﻿#########################################################################
+# Belgium
+#########################################################################
+capital = 295
+oob = "BEL_1936"
+set_research_slots = 3
+set_stability = 0.75
+set_convoys = 80
+#######################
+# Research
+#######################
+set_technology = {
+	infantry_kit_1918 = 1
+	infantry_kit_1936 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	fighter_1933 = 1
+	trench_warfare = 1
+# Armour Tech
+	light_tank_1917 = 1
+	light_tank_1918 = 1
+	light_tank_1926 = 1
+#Naval stuff
+	destroyer_1885 = 1
+#
+}
+#######################
+# Politics
+#######################
+set_politics = {
+	parties = {
+		national_socialist = { popularity = 0 }		
+		fascist = { popularity = 5 }		
+		paternal_autocrat = { popularity = 1 }		
+		conservative = { popularity = 39 }				
+		liberal = { popularity = 14 }		
+		social_democrat = { popularity = 37 }		
+		left_wing_radical = { popularity = 1 }		
+		leninist = { popularity = 3 }		
+		stalinist = { popularity = 0 }	
+	}
+	
+	ruling_party = conservative
+	last_election = "1932.11.27"
+	election_frequency = 48
+	elections_allowed = yes
+}
+add_ideas = {
+# Cabinet
+	BEL_HoG_Paul_Van_Zeeland
+	BEL_FM_Paul_Van_Zeeland
+	BEL_AM_Albert_Deveze
+	BEL_MoS_Eugene_Soudan
+# Military Staff
+	BEL_CoStaff_Oscar_Cumont
+	BEL_CoArmy_Victor_van_Strydonck_de_Burkel
+	BEL_CoNavy_G_Timmermans
+	BEL_CoAir_LFE_Wouters
+}
+#######################
+# Leaders
+#######################
+# National Socialism
+create_country_leader = {
+	name = "Léon Degrelle"
+	desc = ""
+	picture = "Belgium_NS_Leon_Degrelle.tga"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {}
+}
+# Fascism
+create_country_leader = {
+	name = "Joris Van Severen"
+	desc = ""
+	picture = "Belgium_FA_Joris_Van_Severen.tga"
+	expire = "1965.1.1"
+	ideology = fascism
+	traits = {}
+}
+# Paternal Autocracy
+create_country_leader = {
+	name = "Leopold III"
+	desc = ""
+	picture = "Belgium_PA_Leopold_III.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocracy
+	traits = {}
+}
+
+# Conservatism
+create_country_leader = {
+	name = "Paul van Zeeland"
+	desc = ""
+	picture = "Belgium_ML_Paul_Van_Zeeland.tga"
+	expire = "1965.1.1"
+	ideology = social_conservatism
+	traits = {}
+}
+# Liberalism 
+create_country_leader = {
+	name = "Victor de Laveleye"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = social_liberalism
+	traits = {}
+}
+# Social Democracy
+create_country_leader = {
+	name = "Paul-Henri Spaak"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = social_democracy
+	traits = {}
+}
+
+# Left-Wing Radicalism
+create_country_leader = {
+	name = "Joseph Jacquemotte"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = left_wing_radicalism
+	traits = {}
+}
+# Bolshevik-Leninism
+create_country_leader = {
+	name = "Abraham Leon"
+	desc = ""
+	picture = ".tga"
+	expire = "1965.1.1"
+	ideology = leninism
+	traits = {}
+}
+# Marxism-Leninism
+create_country_leader = {
+	name = "Julien Lahaut"
+	desc = ""
+	picture = "Belgium_ML_Julien_Lahaut.tga"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {}
+}
+#######################
+# Generals
+#######################
+create_corps_commander = {
+	name = "M.C.L. Keyaerts"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+	traits = { trait_mountaineer hill_fighter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+#######################
+# Admirals
+#######################
+create_navy_leader = {
+	name = "Georges Timmermans"
+	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
+	traits = { seawolf }
+	skill = 4
+}

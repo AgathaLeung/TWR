@@ -69,13 +69,9 @@ bookmarks = {
 		"CHI"={
 			history = "CHI_GATHERING_STORM_DESC"
 			ideology = neutrality
-			#ideas = {
-				state_shintoism
+			ideas = {
 			}	
-			#focuses = {
-				southern_expansion_focus
-				divine_wind_focus
-				found_own_faction_focus
+			focuses = {
 			}			
 		}
 		"SOV"={
